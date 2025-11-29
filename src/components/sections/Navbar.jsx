@@ -12,8 +12,8 @@ export default function Navbar() {
         
         {/* Links */}
         <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
+          <a href="#Compare" className="hover:text-blue-600 transition">Compare</a>
           <a href="#how" className="hover:text-blue-600 transition">How it Works</a>
-          <a href="#demo" className="hover:text-blue-600 transition">The Menu</a>
           <a href="#pricing" className="hover:text-blue-600 transition">Pricing</a>
         </div>
 

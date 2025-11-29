@@ -1,44 +1,86 @@
 import React from 'react';
-import { Clock, Zap, CheckCircle2 } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 export default function Comparison() {
+  // Define Brand Colors (Tailwind classes for deep navy/blue)
+  const talentScopeBackground = 'bg-slate-900'; // Dark background for contrast
+  const talentScopeTextColor = 'text-white';
+  const agencyBackground = 'bg-white';
+  const agencyTextColor = 'text-slate-900';
+  const agencyBorder = 'border-red-400';
+
   return (
-    <section className="py-24 bg-slate-50 border-t border-slate-200">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-extrabold text-slate-900">Why Founders Switch</h2>
-          <p className="text-slate-500 mt-4">The agency model is broken. We fixed it.</p>
+    <section className="w-full max-w-5xl mx-auto py-12 px-4" id="comparison">
+      <h2 className="text-4xl md:text-5xl font-black text-center mb-16 text-slate-900">
+        The Real Cost of Recruiting
+      </h2>
+
+      <div className="grid gap-8 md:grid-cols-2">
+        {/* Traditional Agency (Cost/Risk - Light Theme) */}
+        <div className={`border-2 ${agencyBorder} rounded-2xl p-8 ${agencyBackground} shadow-lg`}>
+          <div className="text-red-600 font-semibold text-xl mb-6 border-b pb-4 border-red-100">
+            Traditional Agency
+          </div>
+          <div className="space-y-6">
+            <div>
+              <p className="text-sm text-gray-500 uppercase tracking-wider">Placement Fee</p>
+              <p className="text-4xl font-black text-red-600">$15k - $25k</p>
+            </div>
+            <div>
+              <p className="text-sm text-gray-500 uppercase tracking-wider">Time to Candidate</p>
+              <p className={`text-3xl font-bold ${agencyTextColor}`}>4-8 Weeks</p>
+              <p className="text-sm text-gray-400 mt-1">Lost revenue during slow hiring</p>
+            </div>
+            <div>
+              <p className="text-sm text-gray-500 uppercase tracking-wider">Vetting & Screening</p>
+              <p className={`text-lg font-medium ${agencyTextColor}`}>Zero screening. **You read resumes.**</p>
+            </div>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Old Way */}
-          <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm opacity-80">
-            <h3 className="text-xl font-bold text-slate-400 mb-6 flex items-center gap-2">
-              <Clock size={24} /> Traditional Agency
-            </h3>
-            <ul className="space-y-5 text-slate-500">
-              <li className="flex items-center gap-3"><span className="text-red-400 text-xl font-bold">×</span> Expensive (20% of Salary)</li>
-              <li className="flex items-center gap-3"><span className="text-red-400 text-xl font-bold">×</span> 4-6 weeks to hire</li>
-              <li className="flex items-center gap-3"><span className="text-red-400 text-xl font-bold">×</span> Resume spam, no vetting</li>
-              <li className="flex items-center gap-3"><span className="text-red-400 text-xl font-bold">×</span> "Salesy" recruiters</li>
-            </ul>
+        {/* Talent Scope (Utility/Value - Dark Theme, matching Pricing Card) */}
+        <div className={`border-2 border-blue-600 rounded-2xl p-8 ${talentScopeBackground} shadow-xl`}>
+          <div className="text-blue-400 font-semibold text-xl mb-6 border-b pb-4 border-blue-700">
+            Talent Scope (Utility Model)
           </div>
-
-          {/* New Way */}
-          <div className="bg-white p-8 rounded-2xl border-2 border-blue-600 shadow-xl shadow-blue-900/5 relative overflow-hidden transform md:-translate-y-4">
-            <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">RECOMMENDED</div>
-            <h3 className="text-xl font-bold text-blue-600 mb-6 flex items-center gap-2">
-              <Zap size={24} fill="currentColor" /> Talent Scope
-            </h3>
-            <ul className="space-y-5 text-slate-900 font-medium">
-              <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-600" size={20} /> Flat $1,000/month</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-600" size={20} /> Candidates every Monday</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-600" size={20} /> Video-Verified Quality</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-600" size={20} /> <strong>Hungry, coachable talent (0-2 Yrs)</strong></li>
-            </ul>
+          <div className="space-y-6">
+            <div>
+              <p className="text-sm text-blue-300 uppercase tracking-wider">Cost (Flat Monthly Fee)</p>
+              <p className="text-4xl font-black text-white">$1,000</p>
+              <p className="text-sm text-blue-400 mt-1">**$0 placement fees**</p>
+            </div>
+            <div>
+              <p className="text-sm text-blue-300 uppercase tracking-wider">Time to Candidate</p>
+              <p className="text-3xl font-bold text-white">Weekly</p>
+              <p className="text-sm text-blue-400 mt-1">Pipeline delivered every Monday</p>
+            </div>
+            <div>
+              <p className="text-sm text-blue-300 uppercase tracking-wider">Vetting & Screening</p>
+              <p className="text-lg font-medium text-white">**100% pre-screened**</p>
+              <p className="text-sm text-blue-400 mt-1">Video + AI scorecards</p>
+            </div>
+            
+            {/* Operational Flexibility - White text, Green Checkmarks */}
+            <div className="mt-8 border-t pt-6 border-blue-700 space-y-3">
+              <ComparisonItem label="No placement fees. Your hire, your saving." isDark={true} />
+              <ComparisonItem label="Pause or cancel anytime. Stop paying when filled." isDark={true} />
+              <ComparisonItem label="You control the pipeline; we deliver the talent." isDark={true} />
+            </div>
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+// Updated ComparisonItem to support dark background
+function ComparisonItem({ label, isDark = false }) {
+  const textColor = isDark ? 'text-gray-300' : 'text-gray-700';
+  
+  return (
+    <p className={`flex items-start gap-2 text-base ${textColor}`}>
+      <CheckCircle size={18} className="text-green-500 flex-shrink-0 mt-0.5" />
+      <span>{label}</span>
+    </p>
   );
 }
