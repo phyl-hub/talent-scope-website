@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animations */
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+}
+
+/* Base styles just in case Tailwind fails to load immediately */
+body {
+  background-color: #0B1120; /* Deep Navy */
+  color: white;
+}
