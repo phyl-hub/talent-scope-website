@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // 1. IMPORT THIS to fix navigation
 
 export default function Footer() {
   return (
@@ -9,16 +10,14 @@ export default function Footer() {
           {/* Column 1: Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold shadow-sm">
-                T
-              </div>
+              <img src="/images/talent-scope-logo.png" alt="Talent Scope Logo" className="w-8 h-8 object-contain" />
               <span className="text-xl font-bold tracking-tight text-slate-900">
                 Talent Scope
               </span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
-              Verified candidates. Flat fees. <br />
-              Built for SaaS Founders.
+              The #1 staffing bench for Solar Dealers. <br />
+              Pre-vetted remote setters, delivered weekly.
             </p>
           </div>
 
@@ -26,9 +25,11 @@ export default function Footer() {
           <div>
             <p className="text-sm font-bold text-slate-900 mb-4 uppercase tracking-wider">Product</p>
             <ul className="space-y-3 text-sm text-slate-500">
-              <li><a href="#how" className="hover:text-blue-600 transition duration-200">How It Works</a></li>
-              <li><a href="#demo" className="hover:text-blue-600 transition duration-200">The Menu</a></li>
-              <li><a href="#pricing" className="hover:text-blue-600 transition duration-200">Pricing</a></li>
+              {/* Internal Anchor Links (using #) can stay as <a> tags */}
+              <li><a href="/#product-promise" className="hover:text-blue-600 transition duration-200">Our Product</a></li>
+              <li><a href="/#how" className="hover:text-blue-600 transition duration-200">How It Works</a></li>
+              <li><a href="/#pricing" className="hover:text-blue-600 transition duration-200">Pricing</a></li>
+              <li><a href="/#faq" className="hover:text-blue-600 transition duration-200">FAQ</a></li>
             </ul>
           </div>
 
@@ -36,18 +37,19 @@ export default function Footer() {
           <div>
             <p className="text-sm font-bold text-slate-900 mb-4 uppercase tracking-wider">Legal</p>
             <ul className="space-y-3 text-sm text-slate-500">
-              <li><a href="#" className="hover:text-blue-600 transition duration-200">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-blue-600 transition duration-200">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-blue-600 transition duration-200">Contact Support</a></li>
+              {/* 2. USE <Link> FOR INTERNAL PAGES */}
+              <li><Link to="/privacy" className="hover:text-blue-600 transition duration-200">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="hover:text-blue-600 transition duration-200">Terms of Service</Link></li>
+              <li><a href="mailto:sales@talent-scope.io" className="hover:text-blue-600 transition duration-200">Contact Sales</a></li>
             </ul>
           </div>
 
-          {/* Column 4: Social */}
+          {/* Column 4: Connect */}
           <div>
             <p className="text-sm font-bold text-slate-900 mb-4 uppercase tracking-wider">Connect</p>
             <ul className="space-y-3 text-sm text-slate-500">
-              <li><a href="#" className="hover:text-blue-600 transition duration-200">Twitter</a></li>
-              <li><a href="#" className="hover:text-blue-600 transition duration-200">LinkedIn</a></li>
+              <li><a href="mailto:sales@talent-scope.io" className="hover:text-blue-600 transition duration-200">Email</a></li>
+              <li><a href="https://www.linkedin.com/company/talent-scope-group/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition duration-200">LinkedIn</a></li>
             </ul>
           </div>
         </div>
@@ -55,7 +57,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-400 text-sm">&copy; 2025 Talent Scope Group LLC. All rights reserved.</p>
-          <p className="text-slate-400 text-sm font-medium">An SDR hiring manager in a box.</p>
+          <p className="text-slate-400 text-sm font-medium">Scale your virtual solar sales floor without recruiter fees.</p>
         </div>
       </div>
     </footer>

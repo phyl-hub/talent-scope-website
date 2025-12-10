@@ -1,51 +1,127 @@
 import React from 'react';
-import FeatureItem from '../ui/FeatureItem';
+import { Zap, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Pricing() {
   return (
-    <section className="py-24 bg-slate-50 border-t border-slate-200" id="pricing">
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden">
-          <div className="grid md:grid-cols-2">
-            
-            {/* Left: Value */}
-            <div className="p-12">
-              <h2 className="text-3xl font-extrabold text-slate-900 mb-6">Simple, Flat Pricing.</h2>
-              <p className="text-slate-500 mb-8 leading-relaxed">
-                Hire as many SDRs as you want. No placement fees. No hidden costs. Just a simple monthly subscription.
-              </p>
-              <ul className="space-y-4">
-                <FeatureItem text="3-5 Verified Candidates Weekly" />
-                <FeatureItem text="Video Pitches Included" />
-                <FeatureItem text="0% Placement Fees" />
-                <FeatureItem text="Hungry, Coachable Talent" />
-              </ul>
-              
-              {/* Massive Cancel Emphasis */}
-              <div className="mt-8 pt-6 border-t border-slate-100">
-                <p className="text-blue-600 font-bold flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-blue-600"></span>
-                  Pause or Cancel Anytime
-                </p>
-                <p className="text-xs text-slate-400 mt-1 pl-4">No contracts. No long-term lock-in.</p>
-              </div>
-            </div>
+    <section className="py-24 bg-slate-50" id="pricing">
+      <div className="max-w-7xl mx-auto px-6">
+        
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-5xl md:text-6xl font-black tracking-tight text-slate-900">
+            Flat-Fee Solar Sales Staffing for <strong>Solar Dealers & Virtual Sales Floors</strong>.
+          </h2>
+          <p className="text-2xl text-slate-600 mt-4 max-w-2xl mx-auto">
+            Pick your volume. Get fresh, <strong>AI-vetted solar appointment setters</strong> every Monday. No recruiter fees. No placement costs. Ever.
+          </p>
+        </div>
 
-            {/* Right: Price */}
-            <div className="bg-slate-900 p-12 text-white flex flex-col justify-center items-center text-center relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full blur-3xl opacity-20 -mr-16 -mt-16"></div>
-              
-              <p className="text-slate-400 text-sm font-bold uppercase tracking-widest mb-2">Membership</p>
-              <div className="text-6xl font-black mb-2">$1,000</div>
-              <p className="text-slate-400 mb-8">/month</p>
-              
-              <button className="w-full bg-blue-600 hover:bg-blue-500 text-white py-4 rounded-xl font-bold text-lg transition shadow-lg shadow-blue-600/25">
-                Get This Monday's Menu
-              </button>
-              <p className="text-xs text-slate-500 mt-4">7-day free trial available.</p>
+        {/* Pricing Cards */}
+        <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto mb-20">
+          
+          {/* DEALER CORE */}
+          <div className="relative bg-white rounded-3xl shadow-2xl border-2 border-slate-200 overflow-hidden">
+            <div className="absolute top-0 right-0 bg-black text-white px-6 py-2 rounded-bl-2xl font-bold text-sm">
+              MOST POPULAR
             </div>
-            
+            <div className="pt-12 pb-10 px-10">
+              <h3 className="text-3xl font-black text-slate-900">Dealer Core</h3>
+              <div className="mt-6 flex items-baseline gap-2">
+                <span className="text-6xl font-black text-slate-900">$1,000</span>
+                <span className="text-xl text-slate-600">/month</span>
+              </div>
+              <p className="text-lg text-slate-600 mt-2">For solar dealers hiring 2–5 remote solar appointment setters</p>
+
+              <ul className="mt-10 space-y-5">
+                <li className="flex items-start gap-4">
+                  <Zap className="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-900"><strong>3–5 AI-vetted solar appointment setters</strong> delivered every Monday</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <ShieldCheck className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-900">Private Notion bench (yours forever)</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-900">Native/Near-Native English verified</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-900"><strong>AI-Vetted via Zoom</strong> + recordings included</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-900"><strong>Unlimited Hires.</strong> $0 placement fees.</span>
+                </li>
+              </ul>
+
+              <Link to="/schedule" className="mt-12 block w-full bg-amber-500 hover:bg-amber-600 text-white font-bold text-lg py-5 rounded-xl text-center shadow-xl hover:shadow-2xl transition hover:-translate-y-1">
+                See Actual Setters FREE — Book Demo
+              </Link>
+              <p className="text-slate-500 mt-4 text-sm text-center">
+                Month-to-month. Cancel anytime. No long-term contracts.
+              </p>
+            </div>
           </div>
+
+          {/* VIRTUAL FLOOR SCALE */}
+          <div className="relative bg-gradient-to-br from-slate-900 to-black rounded-3xl shadow-3xl overflow-hidden text-white">
+            <div className="absolute top-0 left-0 bg-amber-400 text-black px-6 py-2 rounded-br-2xl font-bold text-sm">
+              HIGH TURNOVER / SCALING
+            </div>
+            <div className="pt-12 pb-10 px-10">
+              <h3 className="text-3xl font-black">Virtual Floor Scale</h3>
+              <div className="mt-6 flex items-baseline gap-2">
+                <span className="text-6xl font-black">$1,800</span>
+                <span className="text-xl opacity-90">/month</span>
+              </div>
+              <p className="text-lg opacity-90 mt-2">For solar dealers scaling 10+ remote solar setters or fighting high churn</p>
+
+              <ul className="mt-10 space-y-5">
+                <li className="flex items-start gap-4">
+                  <Zap className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold"><strong>6–10 remote solar sales reps</strong> delivered every Monday</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <ShieldCheck className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold">Everything in Dealer Core</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold"><strong>Priority 9:00 AM delivery</strong></span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold">Larger candidate pool, ideal for scaling</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold"><strong>Unlimited Hires.</strong> Fill every seat.</span>
+                </li>
+              </ul>
+
+              <Link to="/schedule" className="mt-12 block w-full bg-white text-slate-900 hover:bg-slate-100 font-bold text-lg py-5 rounded-xl text-center shadow-xl hover:shadow-2xl transition hover:-translate-y-1">
+                See Actual Setters FREE — Book Demo
+              </Link>
+              <p className="text-slate-500 mt-4 text-sm text-center">
+                Month-to-month. Cancel anytime. No long-term contracts.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Pain Reminder */}
+        <div className="text-center">
+          <p className="text-3xl font-black text-slate-900">
+            Recruiters charge <span className="text-red-600">$5k–$20k per hire</span> (15-25% of first-year salary). Then they quit.
+          </p>
+          <p className="text-2xl text-slate-600 mt-4">
+            We charge $1,000 flat. Hire unlimited setters. Grab a replacement next Monday.
+          </p>
+          <p className="text-xl text-slate-500 mt-8 font-medium">
+            Stop burning lead spend on empty seats.
+          </p>
         </div>
       </div>
     </section>

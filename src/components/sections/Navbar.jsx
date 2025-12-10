@@ -1,26 +1,67 @@
 import React from 'react';
+// 1. Import Link and useLocation
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
+  // 2. Get the current page path
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-        {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold shadow-blue-600/20 shadow-lg">T</div>
-          <span className="text-xl font-bold tracking-tight text-slate-900">Talent Scope</span>
-        </div>
         
-        {/* Links */}
+        {/* Logo - Always goes to Home */}
+        <Link to="/" className="flex items-center gap-2">
+          {/* Use the public folder path */}
+          <img src="/images/talent-scope-logo.png" alt="Talent Scope Logo" className="w-8 h-8 object-contain" />
+          <span className="text-xl font-bold tracking-tight text-slate-900">Talent Scope</span>
+        </Link>
+        
+        {/* Links - Smart Logic */}
         <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
-          <a href="#Compare" className="hover:text-blue-600 transition">Compare</a>
-          <a href="#how" className="hover:text-blue-600 transition">How it Works</a>
-          <a href="#pricing" className="hover:text-blue-600 transition">Pricing</a>
+          <Link 
+            to="/schedule" 
+            className="hover:text-blue-600 transition"
+          >
+            Schedule
+          </Link>
+          
+          {/* LOGIC: 
+             If we are on Home (isHomePage is true) -> use "#compare" (smooth scroll)
+             If we are on Terms (isHomePage is false) -> use "/#compare" (go to home first)
+          */}
+          
+          <a 
+            href={isHomePage ? "#compare" : "/#compare"} 
+            className="hover:text-blue-600 transition"
+          >
+            Compare
+          </a>
+
+          <a 
+            href={isHomePage ? "#how" : "/#how"} 
+            className="hover:text-blue-600 transition"
+          >
+            How it Works
+          </a>
+
+          <a 
+            href={isHomePage ? "#pricing" : "/#pricing"} 
+            className="hover:text-blue-600 transition"
+          >
+            Pricing
+          </a>
         </div>
 
         {/* CTA */}
-        <button className="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-full font-semibold transition shadow-lg shadow-slate-900/10 text-sm hover:-translate-y-0.5">
-          Hire a Top 1% SDR
-        </button>
+        <Link
+          to="/schedule"
+          className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-semibold transition shadow-lg shadow-amber-500/20 text-sm hover:-translate-y-0.5 flex flex-col items-center leading-tight"
+        >
+          <span className="font-bold">Contact Sales</span>
+          <span className="text-xs opacity-90">(See Bench FREE 🎥)</span>
+        </Link>
       </div>
     </nav>
   );
