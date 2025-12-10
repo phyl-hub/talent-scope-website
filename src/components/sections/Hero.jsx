@@ -21,34 +21,34 @@ export default function Hero() {
 
             <div>
               <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-3">
-                The #1 Engine for <span className="text-amber-600">Scalable Remote Solar Sales Teams.</span>
+                The #1 Bench for <span className="text-amber-600">Remote Solar Sales Talent.</span>
               </h1>
               <p className="text-lg text-slate-900 font-semibold">
-                We stock your sales floor with <strong>3–10 AI-vetted remote talent every Monday.</strong> Access D2D veterans and high-potential new candidates. Watch their Zoom recordings and hire instantly.
+                We stock your sales floor with AI-vetted <strong>Appointment Setters</strong> every Monday. Plus, get exclusive access to <strong className="text-amber-600">High-Ticket Closers</strong> when they drop.
               </p>
             </div>
 
             <p className="text-xl text-slate-500 leading-relaxed max-w-lg">
-              <strong>Unlimited hiring starting at $1,000/mo flat. Stop overpaying for your sales recruitment.</strong>
+              <strong>3–10 pre-vetted reps weekly. $0 recruiter fees. Unlimited hiring from $1,000/mo flat.</strong>
             </p>
 
             <Link
               to="/schedule"
               className="bg-amber-500 hover:bg-amber-600 text-white px-10 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-amber-500/30 transition hover:-translate-y-1 flex items-center justify-center gap-2 w-full sm:w-auto"
             >
-              See Solar Appointment Setters FREE — Book Now
+              See The Talent Bench FREE
               <ArrowRight size={20} />
             </Link>
 
             <p className="text-sm text-amber-700 font-bold bg-amber-50 px-4 py-2 rounded-lg border border-amber-200 inline-block">
-              🎥 See actual solar setter Zoom recordings. 100% free on your first call.
+              🎥 Watch Zoom recordings of Setters & Closers before you hire. 100% free.
             </p>
 
             <div className="grid grid-cols-3 gap-4 pt-4">
               <div className="flex flex-col items-start gap-1">
                 <ShieldCheck className="w-5 h-5 text-green-600 flex-shrink-0" />
                 <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Always Stocked</span>
-                <span className="text-sm font-bold text-slate-900">3–10 Solar Setters Weekly</span>
+                <span className="text-sm font-bold text-slate-900">Setters + Closers</span>
               </div>
               <div className="flex flex-col items-start gap-1">
                 <Lock className="w-5 h-5 text-blue-600 flex-shrink-0" />
@@ -63,7 +63,7 @@ export default function Hero() {
             </div>
 
             <div className="flex items-center gap-6 pt-4 text-sm font-medium text-slate-500">
-              <span className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-amber-600" /> Book directly from bench</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-amber-600" /> Used by 50+ Solar Dealers & Virtual Floors</span>
               <span className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-amber-600" /> $0 placement fees</span>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function Hero() {
               </div>
 
               <div className="absolute bottom-4 left-4 text-white font-bold text-sm bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
-                Your Setter Bench • Fresh Monday 9 AM
+                Setters Drop Weekly • Closers Drop Rare
               </div>
             </div>
 
@@ -107,8 +107,13 @@ export default function Hero() {
 
                 <div className="space-y-3">
                   <CandidateRow name="Marcus Torres" role="Solar Setter • D2D Vet" score={9.8} />
-                  <CandidateRow name="Ashley Chen" role="Virtual Consultant" score={9.6} />
-                  <CandidateRow name="Jordan Mills" role="High-Ticket Closer" score={9.4} />
+                  <div className="relative">
+                    <CandidateRow name="Jordan Mills" role="High-Ticket Closer" score={9.4} />
+                    <div className="absolute -right-2 -top-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] font-black px-2 py-1 rounded-full shadow-lg animate-pulse">
+                      🔥 RARE DROP
+                    </div>
+                  </div>
+                  <CandidateRow name="Ashley Chen" role="Lead Generator" score={9.6} />
                 </div>
 
                 <div className="absolute -right-6 top-1/2 -translate-y-1/2 bg-slate-900 text-white p-4 rounded-xl shadow-xl flex flex-col items-center gap-1">

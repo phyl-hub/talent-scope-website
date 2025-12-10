@@ -16,10 +16,10 @@ export default function Schedule() {
       <div className="bg-gradient-to-r from-amber-50 to-orange-50 py-16">
         <div className="max-w-6xl mx-auto px-6">
           <h1 className="text-5xl md:text-6xl font-black text-slate-900 mb-6">
-            See Solar Appointment Setters — Book FREE Demo
+            See Setters & Closers — Book FREE Demo
           </h1>
           <p className="text-2xl text-slate-600 mb-4">
-            Watch real <strong>solar setter Zoom recordings</strong>. 100% free. In 15 minutes.
+            Watch real <strong>Setter & Closer Zoom recordings</strong>. 100% free. In 15 minutes.
           </p>
           <p className="text-lg text-slate-500 max-w-2xl">
             We'll show you exactly how your private bench works. Fresh <strong>D2D vets & new talent</strong>. AI-vetted Zoom calls. The 5-Point Scorecard. Everything ready to hire.
@@ -35,14 +35,14 @@ export default function Schedule() {
               <Calendar className="w-8 h-8 text-amber-600 flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-bold text-slate-900 mb-2">15 Minutes</h3>
-                <p className="text-slate-600">Quick walkthrough of actual solar appointment setters ready to hire this week</p>
+                <p className="text-slate-600">Quick walkthrough of actual Setters & Closers ready to hire this week</p>
               </div>
             </div>
             <div className="flex gap-4">
               <Zap className="w-8 h-8 text-amber-500 flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-bold text-slate-900 mb-2">Watch Zoom Recordings</h3>
-                <p className="text-slate-600">See actual solar setter recordings. Real energy. Real rebuttal handling. AI-vetted.</p>
+                <p className="text-slate-600">See actual recordings. Real energy. Real rebuttal handling. AI-vetted.</p>
               </div>
             </div>
             <div className="flex gap-4">

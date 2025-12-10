@@ -5,8 +5,8 @@ export default function HowItWorks() {
   const steps = [
     {
       icon: <Search className="w-6 h-6 text-amber-600" />,
-      title: 'We Source D2D Solar Sales Talent',
-      body: 'We headhunt D2D solar sales veterans tired of door-knocking plus high-potential remote solar closers. LinkedIn, solar communities, and commission-driven talent pools—sourced daily for your solar sales team.',
+      title: 'We Source The Grinders & The Pros',
+      body: 'We headhunt high-volume Setters to feed your pipeline AND proven Closers to close your deals. D2D veterans, remote telesales reps, and commission-hungry talent—sourced daily. You get the full stack.',
       stat: '500+ sourced weekly',
     },
     {
@@ -17,9 +17,9 @@ export default function HowItWorks() {
     },
     {
       icon: <CheckCircle2 className="w-6 h-6 text-emerald-600" />,
-      title: 'You Hire Solar Appointment Setters',
-      body: 'Your private Notion bench goes live Monday 9 AM. Watch Zoom recordings of solar setters, review AI-generated Scorecards, and contact your picks directly via email or LinkedIn.',
-      stat: '3–10 solar setters weekly',
+      title: 'Monday Morning Bench Drop',
+      body: 'Your private Notion bench goes live Monday 9 AM EST. Setters are plentiful. Closers are first-come, first-served. Watch Zoom recordings, review AI Scorecards, and contact your picks directly via email or LinkedIn. Be ready.',
+      stat: '3–10 reps weekly',
     },
   ];
 
@@ -40,10 +40,10 @@ export default function HowItWorks() {
             <Sparkles className="w-4 h-4" />
           </p>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900">
-            Hire Pre-Vetted Solar Appointment Setters. Watch Zoom Recordings. Book Instantly.
+            Hire Pre-Vetted Setters & Closers. Watch Zoom Recordings. Book Instantly.
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            No logins. No passwords. Just a secure Notion link with <strong>AI-vetted solar telesales</strong> Zoom recordings, the <strong>5-Point Solar Scorecard</strong>, and direct contact info.
+            No logins. No passwords. Just a secure Notion link with <strong>AI-vetted solar sales talent</strong> Zoom recordings, the <strong>5-Point Solar Scorecard</strong>, and direct contact info.
           </p>
         </div>
 

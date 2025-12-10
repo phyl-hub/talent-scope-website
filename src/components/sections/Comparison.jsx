@@ -32,14 +32,14 @@ export default function Comparison() {
             <div className="flex items-start gap-3">
               <DollarSign className="w-5 h-5 text-red-500 mt-0.5" />
               <div>
-                <p className="font-semibold text-slate-900">$5k–$20k per hire</p>
-                <p className="text-sm text-slate-500">Plus replacement fees when they quit. You pay again and again.</p>
+                <p className="font-semibold text-slate-900">$5k fee for a Setter</p>
+                <p className="text-sm text-slate-500">$20k fee for a Closer. Plus replacement fees when they quit. You pay again and again.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Timer className="w-5 h-5 text-red-500 mt-0.5" />
               <div>
-                <p className="font-semibold text-slate-900">2–4 weeks to see resumes</p>
+                <p className="font-semibold text-slate-900">Slow 4-week placement</p>
                 <p className="text-sm text-slate-500">Empty seats = burned leads = lost installs.</p>
               </div>
             </div>
@@ -78,14 +78,14 @@ export default function Comparison() {
             <div className="flex items-start gap-3">
               <DollarSign className="w-5 h-5 text-amber-400 mt-0.5" />
               <div>
-                <p className="font-semibold text-white">$1,000/mo flat — unlimited hires</p>
-                <p className="text-sm text-amber-100">The bench never runs dry. Grab a replacement Monday.</p>
+                <p className="font-semibold text-white">$1,000/mo flat — Setters + Closers included</p>
+                <p className="text-sm text-amber-100">Unlimited hires for flat fee. The bench never runs dry. Grab a replacement Monday.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Timer className="w-5 h-5 text-amber-400 mt-0.5" />
               <div>
-                <p className="font-semibold text-white">New setters every Monday</p>
+                <p className="font-semibold text-white">Instant Replacement Warranty</p>
                 <p className="text-sm text-amber-100">3–10 vetted candidates weekly—D2D vets and new talent, ready same-day.</p>
               </div>
             </div>

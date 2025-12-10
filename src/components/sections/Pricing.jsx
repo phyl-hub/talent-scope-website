@@ -36,7 +36,11 @@ export default function Pricing() {
               <ul className="mt-10 space-y-5">
                 <li className="flex items-start gap-4">
                   <Zap className="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>3–5 AI-vetted solar appointment setters</strong> delivered every Monday</span>
+                  <span className="font-semibold text-slate-900"><strong>3–5 Vetted Solar Setters Weekly</strong></span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-900"><strong>Access to 'Hidden Gem' Closers (When Available)</strong></span>
                 </li>
                 <li className="flex items-start gap-4">
                   <ShieldCheck className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
@@ -44,15 +48,11 @@ export default function Pricing() {
                 </li>
                 <li className="flex items-start gap-4">
                   <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900">Native/Near-Native English verified</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
                   <span className="font-semibold text-slate-900"><strong>AI-Vetted via Zoom</strong> + recordings included</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>Unlimited Hires.</strong> $0 placement fees.</span>
+                  <span className="font-semibold text-slate-900"><strong>$0 Placement Fees</strong></span>
                 </li>
               </ul>
 
@@ -84,20 +84,16 @@ export default function Pricing() {
                   <span className="font-semibold"><strong>6–10 remote solar sales reps</strong> delivered every Monday</span>
                 </li>
                 <li className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold"><strong>Priority Access to Closer Drops</strong></span>
+                </li>
+                <li className="flex items-start gap-4">
                   <ShieldCheck className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <span className="font-semibold">Everything in Dealer Core</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <CheckCircle2 className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold"><strong>Priority 9:00 AM delivery</strong></span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
                   <span className="font-semibold">Larger candidate pool, ideal for scaling</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold"><strong>Unlimited Hires.</strong> Fill every seat.</span>
                 </li>
               </ul>
 
@@ -114,10 +110,10 @@ export default function Pricing() {
         {/* Bottom Pain Reminder */}
         <div className="text-center">
           <p className="text-3xl font-black text-slate-900">
-            Recruiters charge <span className="text-red-600">$5k–$20k per hire</span> (15-25% of first-year salary). Then they quit.
+            Recruiters charge <span className="text-red-600">$5k for a Setter, $20k for a Closer</span>. Then they quit.
           </p>
           <p className="text-2xl text-slate-600 mt-4">
-            We charge $1,000 flat. Hire unlimited setters. Grab a replacement next Monday.
+            We charge $1,000 flat. Hire unlimited. Access both Setters & Closers. Grab a replacement next Monday.
           </p>
           <p className="text-xl text-slate-500 mt-8 font-medium">
             Stop burning lead spend on empty seats.

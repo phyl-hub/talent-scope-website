@@ -5,12 +5,12 @@ const siteUrl = 'https://talent-scope.io';
 const defaultImage = `${siteUrl}/images/high-energy-sdr-team.jpg`;
 
 export default function SEO({
-  title = 'Hire Solar Appointment Setters | Remote Solar Sales Staffing | Talent Scope',
-  description = 'Hire pre-vetted solar appointment setters and remote solar sales reps. AI-vetted D2D veterans weekly. Flat $1k/mo solar staffing for dealers. Watch Zoom recordings, book instantly.',
+  title = 'Talent Scope | #1 Solar Setter & Closer Staffing Bench',
+  description = 'Hire pre-vetted remote Solar Appointment Setters & High-Ticket Closers. Weekly talent drops. $0 Recruiter Fees. Watch Zoom calls before you hire.',
   path = '/',
   image = defaultImage,
   type = 'website',
-  keywords = 'solar appointment setters, remote solar sales reps, D2D solar sales, virtual solar sales team, solar setter recruitment, hire solar setters, solar sales staffing, AI-vetted solar talent, solar telesales, solar dealer staffing',
+  keywords = 'solar appointment setters, remote solar sales reps, D2D solar sales, virtual solar sales team, solar setter recruitment, hire solar setters, solar sales staffing, AI-vetted solar talent, solar telesales, solar dealer staffing, solar sales recruiting, appointment setter jobs, solar closer, high ticket sales, remote sales staff, D2D to remote, commission only solar reps',
   jsonLd = null,
 }) {
   const url = `${siteUrl}${path}`;

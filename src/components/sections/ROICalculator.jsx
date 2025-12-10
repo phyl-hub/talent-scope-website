@@ -46,10 +46,10 @@ export default function ROICalculator() {
             Solar Sales Staffing ROI Calculator
           </div>
           <h2 className="text-3xl md:text-5xl font-black mb-4">
-            Calculate Your Cost of <span className="text-red-500">NOT Hiring Solar Appointment Setters</span>
+            Calculate Your Cost of <span className="text-red-500">NOT Hiring Solar Sales Talent</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Every day without a solar setter, leads go cold. Calculate your monthly revenue loss from empty solar sales positions vs. flat-fee solar recruitment.
+            Every day without a rep on the phones, leads go cold. Calculate your monthly revenue loss from empty solar sales positions vs. flat-fee solar staffing.
           </p>
         </div>
 

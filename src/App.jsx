@@ -25,16 +25,16 @@ function App() {
           <>
             <SEO
               path="/"
-              title="Hire Solar Appointment Setters | Remote Solar Sales Staffing | Talent Scope"
-              description="Get 3-10 AI-vetted solar appointment setters every Monday. Pre-vetted D2D solar sales reps with Zoom recordings. Flat $1k/mo solar staffing for dealers. No placement fees."
-              keywords="solar appointment setters, hire solar setters, remote solar sales reps, D2D solar sales, virtual solar sales team, solar setter recruitment, solar sales staffing, AI-vetted solar talent, solar telesales, solar dealer staffing, solar sales hiring"
+              title="Talent Scope | #1 Solar Setter & Closer Staffing Bench"
+              description="Get 3-10 AI-vetted Setters weekly. Access exclusive Closer drops. Pre-vetted D2D solar sales talent with Zoom recordings. Flat $1k/mo with $0 placement fees."
+              keywords="solar appointment setters, hire solar setters, remote solar sales reps, D2D solar sales, virtual solar sales team, solar setter recruitment, solar sales staffing, AI-vetted solar talent, solar telesales, solar dealer staffing, solar sales hiring, solar closer, high ticket sales, commission only solar reps"
               type="website"
               jsonLd={{
                 '@context': 'https://schema.org',
                 '@type': 'Product',
-                name: 'Talent Scope Solar Appointment Setter Staffing Service',
+                name: 'Talent Scope Solar Sales Staffing Service',
                 description:
-                  'Weekly delivery of AI-vetted solar appointment setters and D2D sales veterans for solar dealers. Watch Zoom call recordings, review AI scorecards, and hire unlimited remote solar sales reps for a flat $1,000/month with zero placement fees.',
+                  'Weekly delivery of AI-vetted solar appointment setters and high-ticket closers for solar dealers. Watch Zoom call recordings, review AI scorecards, and hire unlimited remote solar sales talent for a flat $1,000/month with zero placement fees. Setters drop weekly, Closers drop rare.',
                 brand: {
                   '@type': 'Brand',
                   name: 'Talent Scope',
