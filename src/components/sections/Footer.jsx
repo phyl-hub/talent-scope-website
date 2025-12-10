@@ -16,8 +16,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
-              The #1 staffing bench for Solar Dealers. <br />
-              Pre-vetted remote setters, delivered weekly.
+              The Ammunition for Your Sales War. <br />
+              We stack the killers. You pull the trigger.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-400 text-sm">&copy; 2025 Talent Scope Group LLC. All rights reserved.</p>
-          <p className="text-slate-400 text-sm font-medium">Scale your virtual solar sales floor without recruiter fees.</p>
+          <p className="text-slate-400 text-sm font-medium">Unlimited hires. $0 recruiter fees.</p>
         </div>
       </div>
     </footer>

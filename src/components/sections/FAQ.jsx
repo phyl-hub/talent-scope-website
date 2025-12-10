@@ -3,52 +3,36 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs = [
   {
-    question: "Do you provide Closers or just Setters?",
-    answer: "Both. Our weekly drops are anchored by high-volume Appointment Setters to keep your calendars full. However, we frequently drop verified High-Ticket Closers onto the bench. At $1,000/mo, hiring just *one* Closer covers your subscription for the entire year. Setters are plentiful. Closers are first-come, first-served."
+    question: "What is 'Stacking'?",
+    answer: "It's your talent bank account. Every Monday, we drop new reps into your portal. If you don't hire them, they stay there. Week after week, your bench grows. You could have 50+ vetted reps ready to go. When someone quits, you don't panic. You just pick the next one off the stack."
   },
   {
-    question: "How does Talent Scope help solar dealers hire remote solar appointment setters?",
-    answer: "We eliminate the hiring bottleneck that costs you installs. Every Monday at 9:00 AM EST, we deliver 3–10 AI-vetted solar appointment setters and closers to your private bench. Each candidate includes Zoom recordings of their screening responses and performance metrics across our 5-Point Solar Scorecard. You review their work, contact them directly via email or LinkedIn, and extend offers—typically within 48 hours. With solar leads costing $50+ per contact, empty seats translate directly to revenue loss. Our subscription model ensures you maintain a continuous pipeline of vetted remote solar sales talent—from proven D2D veterans to high-potential new candidates—with zero recruiter fees, zero placement costs, and unlimited hiring capacity. Your $1,000/mo investment replaces the traditional $5k-$20k per-hire recruiter model."
+    question: "Why 'The Tape Don't Lie'?",
+    answer: "Resumes don't tell the whole story. Interviews can be rehearsed. The tape is real. We make every rep record a 90-120 second pitch. You hear their voice, their energy, their objection handling. You know if they're a fit in 10 seconds. No guessing."
   },
   {
-    question: "How fast can I hire solar setters from my bench?",
-    answer: "Instantly. Once the bench drops, you have full visibility. Each profile includes the setter's direct email and preferred contact details (LinkedIn). You control the entire scheduling and hiring process, allowing most dealers to extend offers within 48 hours of the Monday drop."
+    question: "What about turnover?",
+    answer: "Turnover happens. It's a challenge for growth. But with Talent Scope, it doesn't kill your month. Instead of paying another high fee and waiting weeks, you just open your portal and draft the next rep. We don't stop turnover. We make you resilient to it."
   },
   {
-    question: "Is the bench only available on Mondays?",
-    answer: "No. Your dedicated Notion link provides 24/7 access to your full candidate bench. The list of candidates simply refreshes every Monday at 9:00 AM EST with new profiles. You can view, contact, and hire from your existing bench 365 days a year."
+    question: "How fast can I hire?",
+    answer: "Immediately. You see a rep you like? Message them. Hire them. Onboard them. We don't get in the way. No middleman. No waiting."
   },
   {
-    question: "Do you guarantee the rep's long-term performance or attendance?",
-    answer: "No. We verify the quality of our vetting process—that they passed the 5-Point Scorecard and the Zoom recording is accurate. We are a supply chain for talent. Your organization's training, leadership, and commission structure determine the rep's long-term output and attendance. If a rep proves to be a poor fit, you simply grab a replacement from the fresh bench next Monday. No hassle, no liability."
+    question: "Is this a recruiter?",
+    answer: "No. Traditional recruiting is often slow and costly. We are a logistics company for talent. We supply the talent. You drive the revenue. Flat monthly fee. Unlimited hires."
   },
   {
-    question: "Do reps expect a base salary?",
-    answer: "We filter exclusively for high-ticket, commission-hungry mindsets. These candidates want uncapped earning potential ($5k-$10k/mo). The reps you see are willing to bet on themselves, and the final offer structure is up to your organization."
+    question: "Do you guarantee performance?",
+    answer: "We guarantee the pipeline. Performance varies. If a rep doesn't work out, you don't fight for a refund. You just grab the next one from the bench instantly. No new fees. No downtime. That is your insurance policy."
   },
   {
-    question: "What happens if a Closer quits?",
-    answer: "You go back to the bench. Unlike recruiters who charge you another $10k fee, we just let you grab the next available talent next Monday. $0 risk. That's why we're a subscription—since we charge no placement fees, your bench is immediately stocked with replacements every week. No paperwork. No delays."
+    question: "Are they US-based?",
+    answer: "We source global talent with near-native English. They work US hours. They understand US culture. They offer competitive rates and high dedication."
   },
   {
-    question: "Are all your reps US-based and authorized to work?",
-    answer: "We source talent with verified Native/Near-Native English fluency and US time zone alignment. Every candidate presented is legally authorized to work in the United States without employer sponsorship. Our priority is skill and legal compliance, regardless of geography."
-  },
-  {
-    question: "What's included in the 5-Point Solar Scorecard?",
-    answer: "Every candidate submits a Zoom recording answering our screening questions. Our AI grades them on: English Clarity, Income Ambition, Tech Check (headset/internet), Tonal Authority, and Rebuttal Instinct (objection handling). You see the AI-generated scores and watch their recordings before you hire."
-  },
-  {
-    question: "Do you work with install companies or just dealers?",
-    answer: "We staff any organization focused on residential solar sales volume. Whether you run a high-churn Virtual Sales Floor (Dealer) or need predictable talent for your In-House Install Teams, our process remains the same: Vetting for pure closing potential."
-  },
-  {
-    question: "Can I see the bench before I subscribe?",
-    answer: "Absolutely. Book a 15-minute bench walkthrough and we'll show you real Zoom recordings, AI-generated scorecards, and how the bench works. 100% free. No commitment. No pitch. Just proof."
-  },
-  {
-    question: "What's the difference between Dealer Core and Virtual Floor Scale?",
-    answer: "Dealer Core ($1,000/mo) gives you 3-5 pre-vetted Setters weekly plus access to Closer drops—perfect for smaller teams. Virtual Floor Scale ($1,800/mo) delivers 6-10 reps weekly with priority access to Closer drops—built for organizations scaling fast."
+    question: "What if I don't hire anyone this week?",
+    answer: "They stack. Your bench just got deeper. Next week, you get more. Build your talent reserve."
   }
 ];
 
@@ -88,13 +72,13 @@ export default function FAQ() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-amber-600 font-bold text-sm uppercase tracking-wider mb-4">
-            Solar Sales Hiring FAQ
+            FAQ
           </p>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
-            Common Questions About Hiring Solar Appointment Setters
+            Questions Before You Subscribe
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Everything solar dealers ask before hiring remote solar sales talent from our bench.
+            No fluff. Just answers.
           </p>
         </div>
 
@@ -118,7 +102,7 @@ export default function FAQ() {
             href="mailto:sales@talent-scope.io"
             className="text-amber-600 font-semibold hover:text-amber-700 transition-colors duration-200"
           >
-            Email us at sales@talent-scope.io →
+            sales@talent-scope.io →
           </a>
         </div>
       </div>

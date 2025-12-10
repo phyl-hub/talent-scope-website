@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
           <div className="mt-4 text-sm text-slate-400 font-medium uppercase tracking-wider">
             Effective Date: January 1, 2025 | Last Updated: January 2025
           </div>
-          <p className="mt-4 text-sm text-red-600 font-bold">
+          <p className="mt-4 text-sm text-amber-600 font-bold">
             This Privacy Policy is legally binding. By using our service or submitting candidate data, you consent to these practices.
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
             <div className="space-y-6">
               <div>
                 <h3 className="font-bold text-slate-900 mb-2">2.1 Candidate Personal Data</h3>
-                <p className="text-sm mb-3"><strong>Legally Collected From:</strong> Submitted applications, Zoom recordings, and resume uploads.</p>
+                <p className="text-sm mb-3"><strong>Legally Collected From:</strong> Submitted applications, Loom recordings, and resume uploads.</p>
                 <ul className="list-disc pl-6 space-y-1 text-sm">
                   <li>Full name, email address, phone number</li>
                   <li>LinkedIn profile URL, GitHub, or portfolio links</li>
@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
                   <li><strong>Video Recording:</strong> Your facial features, body language, and appearance</li>
                   <li><strong>Voice Recording:</strong> Your voice characteristics and speech patterns</li>
                   <li><strong>Duration:</strong> Typically 60–180 seconds per submission</li>
-                  <li><strong>Storage Location:</strong> Zoom Cloud (third-party), Google Drive (encrypted), and our backend systems</li>
+                  <li><strong>Storage Location:</strong> Loom Cloud (third-party), Google Drive (encrypted), and our backend systems</li>
                 </ul>
                 <p className="text-sm mt-3 bg-yellow-50 p-3 rounded border border-yellow-200">
                   <strong>Your Explicit Consent:</strong> By submitting a video, you explicitly consent to the collection, storage, and processing of your biometric data for employment evaluation purposes.
@@ -162,7 +162,7 @@ export default function PrivacyPolicy() {
                 </p>
                 <ul className="list-disc pl-6 space-y-1 text-sm">
                   <li>Your name and contact information</li>
-                  <li>Your Zoom recording (hosted link)</li>
+                  <li>Your Loom recording (hosted link)</li>
                   <li>Your resume (PDF)</li>
                   <li>AI-generated energy/communication score</li>
                   <li>Brief summary of qualifications</li>
@@ -192,7 +192,7 @@ export default function PrivacyPolicy() {
                       <td className="p-2">Resume, name, email</td>
                     </tr>
                     <tr className="border-b border-slate-200">
-                      <td className="p-2"><strong>Zoom</strong></td>
+                      <td className="p-2"><strong>Loom</strong></td>
                       <td className="p-2">Video hosting & embedding</td>
                       <td className="p-2">Video, voice, biometric data</td>
                     </tr>
@@ -252,7 +252,7 @@ export default function PrivacyPolicy() {
                 <ul className="list-disc pl-6 space-y-1 mb-3">
                   <li>Delete your profile from the active "Weekly Menu" within 5 business days</li>
                   <li>Delete your resume, contact info, and video links from our systems within 30 days</li>
-                  <li>Request deletion from Zoom Cloud (third-party) — note: Zoom's retention may differ</li>
+                  <li>Request deletion from Loom Cloud (third-party) — note: Loom's retention may differ</li>
                 </ul>
                 <p className="text-red-600 font-bold">
                   LIMITATION: We cannot delete data that has already been downloaded by an employer or is stored in their systems.
@@ -328,7 +328,7 @@ export default function PrivacyPolicy() {
                 <strong>Google Analytics:</strong> We use Google Analytics 4 to track website usage. This sets cookies to understand visitor behavior. You can opt-out via the Google Analytics opt-out browser extension.
               </p>
               <p>
-                <strong>Zoom Tracking:</strong> Zoom may track who views your recording (analytics). This is controlled by Zoom's privacy policy.
+                <strong>Loom Tracking:</strong> Loom may track who views your recording (analytics). This is controlled by Loom's privacy policy.
               </p>
               <p className="bg-blue-50 p-3 rounded">
                 <strong>Cookie Consent:</strong> By continuing to use our website, you consent to cookie usage. We do not use cookies for targeted advertising.
@@ -343,7 +343,7 @@ export default function PrivacyPolicy() {
             <div className="space-y-3 text-sm">
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Encryption in Transit:</strong> All data transmitted via HTTPS/TLS 1.2 or higher</li>
-                <li><strong>Encryption at Rest:</strong> Google Drive (AES-256), Zoom Cloud (industry-standard), backend database (encrypted)</li>
+                <li><strong>Encryption at Rest:</strong> Google Drive (AES-256), Loom Cloud (industry-standard), backend database (encrypted)</li>
                 <li><strong>Access Controls:</strong> Role-based access (only authorized staff can access candidate data)</li>
                 <li><strong>Breach Notification:</strong> In the event of a data breach, we will notify affected individuals within 72 hours per GDPR</li>
               </ul>

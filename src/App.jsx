@@ -25,22 +25,22 @@ function App() {
           <>
             <SEO
               path="/"
-              title="Talent Scope | #1 Solar Setter & Closer Staffing Bench"
-              description="Get 3-10 AI-vetted Setters weekly. Access exclusive Closer drops. Pre-vetted D2D solar sales talent with Zoom recordings. Flat $1k/mo with $0 placement fees."
-              keywords="solar appointment setters, hire solar setters, remote solar sales reps, D2D solar sales, virtual solar sales team, solar setter recruitment, solar sales staffing, AI-vetted solar talent, solar telesales, solar dealer staffing, solar sales hiring, solar closer, high ticket sales, commission only solar reps"
+              title="Talent Scope | Pre-Vetted Solar Setters & Closers Delivered Weekly"
+              description="Your setter quit. Leads are burning. Get 3-10 pre-vetted solar appointment setters every Monday. Watch their Loom auditions. Hire same-week. $1K/mo flat. $0 placement fees."
+              keywords="solar appointment setter, hire solar setters, remote solar sales rep, solar closer, D2D solar sales, virtual sales floor, solar dealer staffing, solar recruiter alternative, commission solar reps, solar sales talent, appointment setter solar"
               type="website"
               jsonLd={{
                 '@context': 'https://schema.org',
                 '@type': 'Product',
-                name: 'Talent Scope Solar Sales Staffing Service',
+                name: 'Talent Scope Solar Sales Staffing',
                 description:
-                  'Weekly delivery of AI-vetted solar appointment setters and high-ticket closers for solar dealers. Watch Zoom call recordings, review AI scorecards, and hire unlimited remote solar sales talent for a flat $1,000/month with zero placement fees. Setters drop weekly, Closers drop rare.',
+                  'Weekly delivery of pre-vetted solar appointment setters and closers. Watch 90-sec Loom auditions, check the 5-Point Scorecard, hire same-week. $1,000/mo flat with zero placement fees. Setters drop weekly. Closers drop rare.',
                 brand: {
                   '@type': 'Brand',
                   name: 'Talent Scope',
                 },
-                category: 'Solar Sales Staffing & Recruitment',
-                keywords: 'solar appointment setters, remote solar sales, D2D solar veterans, solar telesales, virtual solar sales team',
+                category: 'Solar Sales Staffing',
+                keywords: 'solar appointment setter, hire solar reps, remote solar sales, D2D solar, solar closer, virtual sales floor',
                 offers: {
                   '@type': 'Offer',
                   price: '1000',
@@ -60,13 +60,7 @@ function App() {
                 },
                 audience: {
                   '@type': 'Audience',
-                  audienceType: 'Solar dealers, solar sales organizations, virtual sales floors hiring remote solar appointment setters and D2D sales representatives',
-                },
-                aggregateRating: {
-                  '@type': 'AggregateRating',
-                  ratingValue: '9.7',
-                  bestRating: '10',
-                  ratingCount: '47',
+                  audienceType: 'Solar dealers, virtual sales floors, solar companies hiring remote setters and closers',
                 },
               }}
             />
@@ -95,9 +89,9 @@ function App() {
             <>
               <SEO
                 path="/schedule"
-                title="Book a Demo | See AI-Vetted Solar Appointment Setters | Talent Scope"
-                description="Schedule a 15-minute demo to see pre-vetted solar appointment setters with Zoom recordings. Learn how our weekly solar setter bench helps solar dealers scale remote sales teams."
-                keywords="book solar setter demo, solar sales staffing demo, hire solar appointment setters, remote solar sales demo, AI-vetted solar talent"
+                title="See This Week's Bench | Pre-Vetted Solar Setters | Talent Scope"
+                description="15 minutes. Watch real Loom auditions from pre-vetted solar setters. See the 5-Point Scorecard. Know if they can sell before you waste an interview."
+                keywords="solar setter demo, hire solar appointment setters, solar sales staffing, pre-vetted solar reps, remote solar sales, solar closer"
               />
               <Navbar />
               <main>

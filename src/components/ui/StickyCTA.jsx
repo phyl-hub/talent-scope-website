@@ -35,10 +35,10 @@ export default function StickyCTA() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
             </span>
-            <p className="text-xs font-bold text-green-400 uppercase tracking-wider">Bench Drop: Monday 9AM</p>
+            <p className="text-xs font-bold text-green-400 uppercase tracking-wider">Fresh Reps: Monday 9AM EST</p>
           </div>
           <p className="font-bold text-sm md:text-base text-slate-100">
-            Don't miss this week's talent drop.
+            Empty seat? Fill it this week.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function StickyCTA() {
             to="/schedule" 
             className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-bold px-5 py-2.5 rounded-lg transition shadow-lg shadow-amber-500/20 flex items-center gap-2 whitespace-nowrap"
           >
-            Book Demo <ArrowRight size={16} />
+            See the Bench <ArrowRight size={16} />
           </Link>
           <button 
             onClick={() => setIsClosed(true)}
