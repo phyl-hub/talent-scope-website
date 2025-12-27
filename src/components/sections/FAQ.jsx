@@ -8,7 +8,7 @@ const faqs = [
       <>
         <p className="mb-4">Your subscription provides continuous, unlimited access to your Outbound Inventory. It's a fixed-cost logistics utility designed to protect your <strong>LTV/CAC ratio</strong>.</p>
         <ul className="list-disc pl-6 space-y-2">
-          <li><strong>The Drop (Weekly Inventory Drops):</strong> Weekly delivery of <strong>2–4</strong> (Growth Core, dropped Monday @ <strong>2 PM EST</strong>) or <strong>5–8</strong> (Enterprise Scale, dropped Monday @ <strong>9 AM EST</strong>) Outbound Funding Specialists.</li>
+          <li><strong>The Drop (Weekly Inventory Drops):</strong> Weekly delivery of <strong>2–4</strong> (Growth Core: <strong>Standard Batch</strong>, Monday @ <strong>2 PM EST</strong>) or <strong>5–8</strong> (Enterprise Scale: <strong>Priority access to Top 10% Elite Batch</strong>, Monday @ <strong>9 AM EST</strong>) Outbound Funding Specialists.</li>
           <li><strong>The Tape:</strong> Mandatory <strong>90–120s</strong> video auditions ("The Tape Don't Lie") assessed against our Core 5: Revenue Resilience (30%), Communication Fluency & Pacing (20%), Executive Presence & Authority (20%), Incentive Alignment (20%), Operational Readiness (10%).</li>
           <li><strong>Unlimited Hires:</strong> Hire as many reps as you need with <strong>$0 placement fees</strong>.</li>
           <li><strong>Billing:</strong> Month-to-month. Cancel anytime.</li>
@@ -145,17 +145,27 @@ function FAQItem({ id, question, answer, isOpen, onClick }) {
 }
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(() => {
+    if (typeof window === 'undefined') return 0;
+    const hash = window.location.hash?.replace('#', '');
+    if (!hash) return 0;
+    const idx = faqs.findIndex((f) => f.id === hash);
+    return idx >= 0 ? idx : 0;
+  });
 
   // Auto-open based on URL hash (e.g., #faq-unlimited-bench)
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window === 'undefined') return;
+
+    const handleHashChange = () => {
       const hash = window.location.hash?.replace('#', '');
-      if (hash) {
-        const idx = faqs.findIndex((f) => f.id === hash);
-        if (idx >= 0) setOpenIndex(idx);
-      }
-    }
+      if (!hash) return;
+      const idx = faqs.findIndex((f) => f.id === hash);
+      if (idx >= 0) setOpenIndex(idx);
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
   const handleClick = (index) => {

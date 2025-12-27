@@ -78,7 +78,7 @@ export default function Comparison() {
             <div className="flex items-start gap-3">
               <DollarSign className="w-5 h-5 text-amber-500 mt-0.5" />
               <div>
-                <p className="font-semibold text-white">$1,000/mo Flat. Unlimited Hires.</p>
+                <p className="font-semibold text-white">$1,000–$1,800/mo. Unlimited Hires.</p>
                 <p className="text-sm text-amber-100">Hire for energy and grit, not experience. CAC stays fixed.</p>
               </div>
             </div>

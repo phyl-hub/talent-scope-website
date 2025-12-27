@@ -48,7 +48,7 @@ export default function Credibility() {
           </div>
           <div className="bg-amber-50 text-amber-900 rounded-xl px-4 py-3 flex items-center justify-between">
             <span>Weekly candidate drop</span>
-            <span className="font-black">Mon 9 AM & 2 PM EST</span>
+            <span className="font-black">Mon 9 AM (Enterprise) / 2 PM (Growth) EST</span>
           </div>
           <div className="bg-slate-100 text-slate-900 rounded-xl px-4 py-3 flex items-center justify-between">
             <span>Hiring model</span>

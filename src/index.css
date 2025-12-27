@@ -7,6 +7,16 @@
   .perspective-1000 {
     perspective: 1000px;
   }
+
+  .blur-gaussian {
+    filter: blur(6px);
+  }
+}
+
+@layer components {
+  .badge-top-10 {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-1 text-[10px] font-black uppercase tracking-wider bg-amber-400 text-black border border-black/20;
+  }
 }
 
 /* Base styles just in case Tailwind fails to load immediately */

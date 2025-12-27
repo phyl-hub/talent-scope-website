@@ -35,7 +35,7 @@ export default function Terms() {
           <section className="bg-amber-50 border border-amber-200 rounded-xl p-6">
             <h2 className="text-sm font-bold uppercase tracking-wider text-amber-700 mb-3">Subscription Summary</h2>
             <ul className="grid md:grid-cols-2 gap-3 text-sm text-slate-800">
-              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> Weekly Inventory Drops (Mon @ 9 AM EST — Enterprise Scale / 2 PM EST — Growth Core)</li>
+              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> Weekly Inventory Drops (Mon @ 9 AM EST — Enterprise: Top 10% Elite Batch / 2 PM EST — Growth: Standard Batch)</li>
               <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> Unlimited Bench Access</li>
               <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> Month-to-month billing</li>
               <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> Cancel anytime</li>
@@ -65,7 +65,7 @@ export default function Terms() {
               <li><strong>Billing Cycle:</strong> Subscriptions are billed monthly in advance.</li>
               <li><strong>Cancellation:</strong> You may cancel your subscription at any time via your account portal or by emailing billing@talent-scope.io. Access continues until the end of the current billing period.</li>
               <li><strong>Unlimited Bench Access:</strong> Stack and maintain continuous access to candidates in your portal.</li>
-              <li><strong>Weekly Inventory Drops:</strong> New candidates are released weekly (typically Monday @ 9 AM EST for Enterprise Scale; 2 PM EST for Growth Core).</li>
+              <li><strong>Weekly Inventory Drops:</strong> New candidates are released weekly (typically Monday @ 9 AM EST for Enterprise Scale — priority access to the <strong>Top 10% Elite Batch</strong>; 2 PM EST for Growth Core — <strong>Standard Batch</strong>).</li>
               <li><strong>Month-to-month:</strong> Cancel anytime. No long-term contracts.</li>
               <li><strong>No Placement Protection:</strong> We do not offer replacement guarantees or performance guarantees; the subscription provides pipeline access only.</li>
             </ul>

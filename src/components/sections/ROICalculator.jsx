@@ -6,6 +6,9 @@ export default function ROICalculator() {
   const [leadsPerMonth, setLeadsPerMonth] = useState(200);
   const [closeRate, setCloseRate] = useState(18);
   const [dealValue, setDealValue] = useState(5000);
+  const [subscriptionPlan, setSubscriptionPlan] = useState('Growth');
+
+  const subscriptionCost = subscriptionPlan === 'Enterprise' ? 1800 : 1000;
 
   const calculateLoss = () => {
     const potentialDeals = Math.round(leadsPerMonth * (closeRate / 100));
@@ -43,6 +46,20 @@ export default function ROICalculator() {
             
             {/* Inputs */}
             <div className="space-y-6">
+              <div>
+                <label className="block text-sm font-bold text-slate-300 mb-2">
+                  Talent Scope Subscription
+                </label>
+                <select
+                  value={subscriptionPlan}
+                  onChange={(e) => setSubscriptionPlan(e.target.value)}
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl py-3 px-4 text-white font-bold focus:ring-2 focus:ring-amber-500 focus:outline-none transition"
+                >
+                  <option value="Growth">Growth Core ($1,000/mo)</option>
+                  <option value="Enterprise">Enterprise Scale ($1,800/mo)</option>
+                </select>
+              </div>
+
               <div>
                 <label className="block text-sm font-bold text-slate-300 mb-2">
                   Cost Per Lead ($)
@@ -126,11 +143,11 @@ export default function ROICalculator() {
                 </div>
                 <div className="flex justify-between text-sm border-b border-slate-700 pb-2">
                   <span className="text-slate-400">Talent Scope Subscription</span>
-                  <span className="text-green-400 font-bold">From $1,000/mo</span>
+                  <span className="text-green-400 font-bold">${subscriptionCost.toLocaleString()}/mo</span>
                 </div>
                 <div className="flex justify-between text-lg font-bold">
                   <span className="text-white">Potential Net Profit</span>
-                  <span className="text-amber-400">+${(potentialRevenue - 1000).toLocaleString()}</span>
+                  <span className="text-amber-400">+${(potentialRevenue - subscriptionCost).toLocaleString()}</span>
                 </div>
               </div>
 

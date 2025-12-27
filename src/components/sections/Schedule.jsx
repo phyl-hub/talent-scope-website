@@ -25,8 +25,8 @@ export default function Schedule() {
           <p className="text-2xl text-slate-600 mb-4">
             <strong>15 minutes.</strong> We show you this week's Outbound Funding Specialists. You watch the tape. You draft the best.
           </p>
-          <p className="text-lg text-slate-500 max-w-2xl">
-            <strong>Hire for grit, not experience.</strong> Industry knowledge is taught in 20 minutes. Dial-pressure resilience isn't. Remote-ready inventory, every Monday.
+          <p className="text-lg text-slate-500 max-w-3xl">
+            Growth Core gets <strong>Standard Batch</strong> access (Monday @ <strong>2 PM EST</strong>). Enterprise Scale gets priority access to the <strong>Top 10% Elite Batch</strong> (Monday @ <strong>9 AM EST</strong>).
           </p>
         </div>
       </div>

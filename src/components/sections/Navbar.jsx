@@ -60,7 +60,7 @@ export default function Navbar() {
           className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-semibold transition shadow-lg shadow-amber-500/20 text-sm hover:-translate-y-0.5 flex flex-col items-center leading-tight"
         >
           <span className="font-bold">See Candidates FREE</span>
-          <span className="text-xs opacity-90">(Watch The Tape 🎥)</span>
+          <span className="text-xs opacity-90">(See Their Tapes 🎥)</span>
         </Link>
       </div>
     </nav>

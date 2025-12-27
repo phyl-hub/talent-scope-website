@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Play, CheckCircle2, ArrowRight, ShieldCheck, Users, Zap, LayoutDashboard, Clock } from 'lucide-react';
 
 function App() {

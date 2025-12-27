@@ -105,9 +105,6 @@ export default function Hero() {
                   {/* Active Candidate with Popover */}
                   <div className="relative">
                     <CandidateRow name="Jordan Mills" role="Outbound Specialist • 4yr Exp" score={9.5} />
-                    <div className="absolute -right-2 -top-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] font-black px-2 py-1 rounded-full shadow-lg animate-pulse">
-                      🔥 Top Performer
-                    </div>
                   </div>
 
                   <CandidateRow name="Ashley Chen" role="Outbound Specialist • High Volume" score={8.6} />

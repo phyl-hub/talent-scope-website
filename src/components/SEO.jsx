@@ -5,7 +5,7 @@ const siteUrl = 'https://talent-scope.io';
 const defaultImage = `${siteUrl}/images/high-energy-sdr-team.jpg`;
 
 export default function SEO({
-  title = 'Remote MCA Outbound Talent | Outbound Funding Specialists | Talent Scope From $1,000/mo',
+  title = 'Remote MCA Outbound Talent | Outbound Funding Specialists | From $1,000/mo | Talent Scope',
   description = 'Replace $5K-$20K placement fees with fixed-cost MCA talent logistics. Remote-ready Outbound Funding Specialists. Weekly drops. Sustained dial capacity. Unlimited hires. Zero placement fees.',
   path = '/',
   image = defaultImage,

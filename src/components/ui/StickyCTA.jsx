@@ -38,7 +38,7 @@ export default function StickyCTA() {
             <p className="text-xs font-bold text-green-400 uppercase tracking-wider">Outbound Inventory: Every Monday</p>
           </div>
           <p className="font-bold text-sm md:text-base text-slate-100">
-            Weekly drop: Monday @ 9 AM & 2 PM EST.
+            Weekly drop: Mon @ 9 AM (Enterprise) / 2 PM (Growth) EST.
           </p>
         </div>
 
