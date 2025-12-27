@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
       <SEO
         path="/privacy"
         title="Talent Scope Privacy Policy | Candidate & Client Data Protection"
-        description="Learn how Talent Scope collects, uses, and protects candidate videos, resumes, and client data for the video-vetted Solar Setter bench subscription."
+        description="Learn how Talent Scope collects, uses, and protects candidate videos, resumes, and client data for the video-vetted Outbound Bench subscription."
       />
       <Navbar />
 
@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-bold text-slate-900 mb-4">1. Introduction & Scope</h2>
             <p className="mb-4">
-              Talent Scope Group LLC ("Talent Scope," "we," "us," "our") is a subscription-based candidate pipeline service operating under Wyoming law. This Privacy Policy governs how we collect, use, disclose, and protect personal data and biometric information from:
+              Talent Scope Group LLC ("Talent Scope," "we," "us," "our") is a **Fixed-Cost Talent Supply Partner**—a subscription-based fixed-cost talent supply service operating under Wyoming law. This Privacy Policy governs how we collect, use, disclose, and protect personal data and biometric information from:
             </p>
             <ul className="list-disc pl-6 space-y-2 mb-4">
               <li>Candidates who submit video applications and resumes</li>

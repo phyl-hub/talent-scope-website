@@ -5,12 +5,12 @@ const siteUrl = 'https://talent-scope.io';
 const defaultImage = `${siteUrl}/images/high-energy-sdr-team.jpg`;
 
 export default function SEO({
-  title = 'Talent Scope | Hire Pre-Vetted Solar Sales Reps | Flat Monthly Fee',
-  description = 'Stop paying placement fees. Access a weekly pipeline of pre-vetted solar setters and closers. Watch video auditions and hire instantly. The hiring utility for solar dealers.',
+  title = 'Remote MCA Outbound Talent | Outbound Funding Specialists | Talent Scope From $1,000/mo',
+  description = 'Replace $5K-$20K placement fees with fixed-cost MCA talent logistics. Remote-ready Outbound Funding Specialists. Weekly drops. Sustained dial capacity. Unlimited hires. Zero placement fees.',
   path = '/',
   image = defaultImage,
   type = 'website',
-  keywords = 'solar appointment setter, hire solar setters, solar sales recruiting, hire solar sales reps, pre-vetted solar talent, commission only solar sales, solar staffing agency, hire door to door reps, solar closers, remote solar sales jobs, no placement fee recruiting, solar sales headhunters, solar lead generation talent, sales team scaling, high ticket sales, virtual sales floor, solar dealer staffing',
+  keywords = 'MCA outbound hiring, outbound funding specialist, merchant cash advance recruiting, MCA sales talent, plug and play sales reps, fixed-cost MCA recruiting, dial-pressure resilience, objection handling, MCA floor staffing, MCA talent pipeline, no placement fee recruiting, outbound continuity, commission sales',
   jsonLd = null,
 }) {
   const url = `${siteUrl}${path}`;

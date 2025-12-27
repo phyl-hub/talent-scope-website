@@ -5,6 +5,7 @@ import Navbar from './components/sections/Navbar';
 import Hero from './components/sections/Hero';
 import Comparison from './components/sections/Comparison';
 import HowItWorks from './components/sections/HowItWorks';
+import Credibility from './components/sections/Credibility';
 import Pricing from './components/sections/Pricing';
 import FAQ from './components/sections/FAQ';
 import Footer from './components/sections/Footer';
@@ -25,22 +26,22 @@ function App() {
           <>
             <SEO
               path="/"
-              title="Talent Scope | Pre-Vetted Solar Setters & Closers Delivered Weekly"
-              description="Your setter quit. Leads are burning. Get 3-10 pre-vetted solar appointment setters every Monday. Watch their Loom auditions. Hire same-week. $1K/mo flat. $0 placement fees."
-              keywords="solar appointment setter, hire solar setters, remote solar sales rep, solar closer, D2D solar sales, virtual sales floor, solar dealer staffing, solar recruiter alternative, commission solar reps, solar sales talent, appointment setter solar"
+              title="Remote MCA Outbound Talent | Outbound Funding Specialists | From $1,000/mo | Talent Scope"
+              description="Replace $5K-$20K placement fees with fixed-cost MCA talent logistics. Remote-ready Outbound Funding Specialists. Weekly drops. Sustained dial capacity. Zero placement fees."
+              keywords="remote MCA recruiting, virtual MCA sales floor, pre-vetted remote MCA talent, commission-only ISO reps, remote MCA appointment setters, outbound funding specialists, virtual high-volume dialers, dial-pressure resilience, outbound continuity"
               type="website"
               jsonLd={{
                 '@context': 'https://schema.org',
                 '@type': 'Product',
-                name: 'Talent Scope Solar Sales Staffing',
+                name: 'Talent Scope: Remote MCA Talent Logistics Utility',
                 description:
-                  'Weekly delivery of pre-vetted solar appointment setters and closers. Watch 90-sec Loom auditions, check the 5-Point Scorecard, hire same-week. $1,000/mo flat with zero placement fees. Setters drop weekly. Closers drop rare.',
+                  'Replace $5K-$20K placement fees with fixed-cost MCA talent logistics. Remote-ready Outbound Funding Specialists. 90-120 second video auditions verify dial-pressure resilience. Unlimited hires. Zero placement fees.',
                 brand: {
                   '@type': 'Brand',
-                  name: 'Talent Scope',
+                  name: 'Talent Scope Group LLC',
                 },
-                category: 'Solar Sales Staffing',
-                keywords: 'solar appointment setter, hire solar reps, remote solar sales, D2D solar, solar closer, virtual sales floor',
+                category: 'Fixed-Cost MCA Recruiting Services',
+                keywords: 'remote MCA recruiting, virtual MCA sales floor, outbound funding specialists, dial-pressure resilience, outbound continuity',
                 offers: {
                   '@type': 'Offer',
                   price: '1000',
@@ -60,7 +61,7 @@ function App() {
                 },
                 audience: {
                   '@type': 'Audience',
-                  audienceType: 'Solar dealers, virtual sales floors, solar companies hiring remote setters and closers',
+                  audienceType: 'MCA companies hiring remote outbound funding specialists',
                 },
               }}
             />
@@ -69,6 +70,7 @@ function App() {
               <Hero />
               <Comparison />
               <HowItWorks />
+              <Credibility />
               <ROICalculator />
               <Pricing />
               <FAQ />
@@ -89,9 +91,9 @@ function App() {
             <>
               <SEO
                 path="/schedule"
-                title="See This Week's Bench | Pre-Vetted Solar Setters | Talent Scope"
-                description="15 minutes. Watch real Loom auditions from pre-vetted solar setters. See the 5-Point Scorecard. Know if they can sell before you waste an interview."
-                keywords="solar setter demo, hire solar appointment setters, solar sales staffing, pre-vetted solar reps, remote solar sales, solar closer"
+                title="See This Week's Remote MCA Bench | Outbound Funding Specialists | Talent Scope"
+                description="15 minutes. Watch video auditions from Remote-Ready Outbound Funding Specialists. Verify dial-pressure resilience and objection handling before you interview. Draft the best. Dominate tomorrow."
+                keywords="MCA outbound demo, MCA setter demo, MCA sales bench, vetted MCA talent, MCA recruiting, merchant cash advance staffing, outbound funding specialist"
               />
               <Navbar />
               <main>

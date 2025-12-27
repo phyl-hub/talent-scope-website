@@ -8,8 +8,8 @@ export default function Terms() {
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
       <SEO
         path="/terms"
-        title="Talent Scope Terms of Service | Solar Setter Bench Subscription"
-        description="Review the Terms of Service for Talent Scope's video-vetted Solar Setter bench subscription. Understand scope, billing, data handling, and liability."
+        title="Talent Scope Terms of Service | Outbound Bench Subscription"
+        description="Review the Terms of Service for Talent Scope's video-vetted Outbound Bench subscription. Includes weekly inventory drops, unlimited bench access, month-to-month billing, data handling, and liability."
       />
       <Navbar />
 
@@ -30,15 +30,29 @@ export default function Terms() {
 
         {/* Content */}
         <div className="space-y-12 text-slate-600 leading-relaxed">
+
+          {/* Subscription Summary (Quick View) */}
+          <section className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+            <h2 className="text-sm font-bold uppercase tracking-wider text-amber-700 mb-3">Subscription Summary</h2>
+            <ul className="grid md:grid-cols-2 gap-3 text-sm text-slate-800">
+              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> Weekly Inventory Drops (Mon @ 9 AM EST — Enterprise Scale / 2 PM EST — Growth Core)</li>
+              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> Unlimited Bench Access</li>
+              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> Month-to-month billing</li>
+              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> Cancel anytime</li>
+              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> No Success Fees / No Placement Fees</li>
+              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> No Placement Protection or performance guarantees</li>
+              <li className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-600"></span> Pipeline access only; you hire directly</li>
+            </ul>
+          </section>
           
           {/* 1. Service Scope */}
           <section>
             <h2 className="text-xl font-bold text-slate-900 mb-4">1. Scope of Service</h2>
             <p className="mb-4">
-              Talent Scope Group LLC ("Talent Scope") provides a subscription-based lead generation service for hiring purposes. We deliver a weekly "Menu" of pre-screened solar appointment setter and sales representative candidates, including their video pitches and resumes.
+              Talent Scope Group LLC ("Talent Scope") is your **Fixed-Cost Talent Supply Partner**—a subscription-based logistics utility for outbound hiring. We deliver **Weekly Inventory Drops** featuring video-vetted **Outbound Funding Specialists** (MCA-focused and adjacent short-cycle industries), including their video auditions and resumes.
             </p>
             <div className="bg-blue-50 border-l-4 border-blue-600 p-4 text-slate-700 text-sm">
-              <strong>Important Distinction:</strong> We are not a recruitment agency or a headhunting firm. We do not represent the candidates, negotiate salaries, manage employment offers, or guarantee the longevity of any hire.
+              <strong>Important Distinction:</strong> We are not a recruitment agency, headhunting firm, or employment representative. We do not represent candidates, negotiate salaries, manage employment offers, or guarantee individual hire longevity. We provide fixed-cost talent supply; final compliance, background checks, and licensing confirmation are the client's responsibility.
             </div>
           </section>
 
@@ -46,10 +60,14 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-bold text-slate-900 mb-4">2. Subscription & Fees</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Flat Fee:</strong> Access to the pipeline is charged at a flat rate of <strong>$1,000 USD per month</strong>.</li>
+              <li><strong>Flat Fee:</strong> Access to the logistics utility starts at <strong>$1,000 USD per month</strong> (Growth Core) or <strong>$1,800 USD per month</strong> (Enterprise Scale).</li>
               <li><strong>No Success Fees:</strong> We do not charge placement fees, commissions, or percentages of candidate salaries.</li>
               <li><strong>Billing Cycle:</strong> Subscriptions are billed monthly in advance.</li>
               <li><strong>Cancellation:</strong> You may cancel your subscription at any time via your account portal or by emailing billing@talent-scope.io. Access continues until the end of the current billing period.</li>
+              <li><strong>Unlimited Bench Access:</strong> Stack and maintain continuous access to candidates in your portal.</li>
+              <li><strong>Weekly Inventory Drops:</strong> New candidates are released weekly (typically Monday @ 9 AM EST for Enterprise Scale; 2 PM EST for Growth Core).</li>
+              <li><strong>Month-to-month:</strong> Cancel anytime. No long-term contracts.</li>
+              <li><strong>No Placement Protection:</strong> We do not offer replacement guarantees or performance guarantees; the subscription provides pipeline access only.</li>
             </ul>
           </section>
 

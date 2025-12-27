@@ -7,13 +7,13 @@ export default function Comparison() {
       <div className="text-center mb-14 space-y-3">
         <p className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-amber-600 bg-amber-50 px-4 py-2 rounded-full">
           <AlertTriangle className="w-4 h-4" />
-          The Modern Solution
+          The Elite Operator Solution
         </p>
         <h2 className="text-4xl md:text-5xl font-black text-slate-900">
-          Traditional Recruiting is <span className="text-amber-600">Broken.</span>
+          Variable Placement Fees <span className="text-red-600">Destroy Your P&L.</span>
         </h2>
         <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-          <strong>High placement fees kill margins.</strong> Especially when retention is uncertain. Stop paying for promises. Pay for <strong>performance.</strong>
+          <strong>$5K-$20K per hire is unsustainable</strong> when you lose 50% of your floor every quarter. Every placement fee spikes your CAC. Switch to a fixed-cost pipeline that keeps your MCA desks full.
         </p>
       </div>
 
@@ -32,29 +32,29 @@ export default function Comparison() {
             <div className="flex items-start gap-3">
               <DollarSign className="w-5 h-5 text-slate-400 mt-0.5" />
               <div>
-                <p className="font-semibold text-slate-900">$10,000+ Per Hire</p>
-                <p className="text-sm text-slate-500">High upfront costs. Complex refund terms if they leave.</p>
+                <p className="font-semibold text-slate-900">$5K-$20K Per Placement</p>
+                <p className="text-sm text-slate-500">Variable costs that spike every time you hire. Zero guarantee they perform.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Timer className="w-5 h-5 text-slate-400 mt-0.5" />
               <div>
-                <p className="font-semibold text-slate-900">Weeks of Waiting</p>
-                <p className="text-sm text-slate-500">"We're looking for the perfect culture fit." Often delays the process.</p>
+                <p className="font-semibold text-slate-900">4–6 Weeks Downtime</p>
+                <p className="text-sm text-slate-500">Every empty seat costs you $20k/mo in lost opportunity.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <ShieldCheck className="w-5 h-5 text-slate-400 mt-0.5" />
               <div>
-                <p className="font-semibold text-slate-900">Resume Screening</p>
-                <p className="text-sm text-slate-500">You receive PDFs, but still bear the burden of interviewing.</p>
+                <p className="font-semibold text-slate-900">Resume Fluff</p>
+                <p className="text-sm text-slate-500">You waste hours interviewing candidates who can't close.</p>
               </div>
             </div>
           </div>
 
           <div className="mt-auto pt-4 text-sm text-slate-500">
-            <Flame className="w-4 h-4 inline mr-1 text-amber-500" />
-            Result: Lost revenue while positions sit open.
+            <Flame className="w-4 h-4 inline mr-1 text-red-500" />
+            Result: CAC spikes with every hire. LTV erodes with every departure.
           </div>
         </div>
 
@@ -69,7 +69,7 @@ export default function Comparison() {
           <div className="flex items-center justify-between border-b border-amber-800 pb-4 relative z-10">
             <div>
               <p className="text-xs font-bold uppercase tracking-wider text-amber-400">Talent Scope</p>
-              <p className="text-sm text-amber-100">The Talent Engine.</p>
+              <p className="text-sm text-amber-100">Revenue-First MCA Recruiting.</p>
             </div>
             <CheckCircle className="w-6 h-6 text-amber-500" />
           </div>
@@ -78,29 +78,29 @@ export default function Comparison() {
             <div className="flex items-start gap-3">
               <DollarSign className="w-5 h-5 text-amber-500 mt-0.5" />
               <div>
-                <p className="font-semibold text-white">$1K Flat Monthly</p>
-                <p className="text-sm text-amber-100">Hire 1 rep or 100. Price doesn't change.</p>
+                <p className="font-semibold text-white">$1,000/mo Flat. Unlimited Hires.</p>
+                <p className="text-sm text-amber-100">Hire for energy and grit, not experience. CAC stays fixed.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Timer className="w-5 h-5 text-amber-500 mt-0.5" />
               <div>
-                <p className="font-semibold text-white">Instant Access</p>
-                <p className="text-sm text-amber-100">The bench is stacked. You draft today.</p>
+                <p className="font-semibold text-white">Remote-Ready Inventory.</p>
+                <p className="text-sm text-amber-100">Vetted for tech-readiness and the discipline to hit 300+ dials/day.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5" />
               <div>
-                <p className="font-semibold text-white">Verified Performance</p>
-                <p className="text-sm text-amber-100">Watch the audition. Verify the skill. Eliminate guesswork.</p>
+                <p className="font-semibold text-white">90-120s Video Auditions</p>
+                <p className="text-sm text-amber-100">Verify dial-pressure resilience before you interview.</p>
               </div>
             </div>
           </div>
 
           <div className="mt-auto pt-4 text-sm text-amber-100 relative z-10">
-            <Flame className="w-4 h-4 inline mr-1 text-amber-400" />
-            Result: You scale your sales team instantly.
+            <Flame className="w-4 h-4 inline mr-1 text-green-400" />
+            Result: CAC protected. LTV preserved. Revenue uptime maximized.
           </div>
         </div>
       </div>

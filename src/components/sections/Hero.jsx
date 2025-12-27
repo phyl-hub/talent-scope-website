@@ -12,62 +12,58 @@ export default function Hero() {
           {/* Left Column: Copy */}
           <div className="space-y-8 relative z-10">
             {/* Top Tagline */}
-            <div className="inline-flex items-center gap-2 bg-amber-50 text-amber-800 px-4 py-1.5 rounded-full text-sm font-bold border border-amber-200">
-              <Zap size={14} />
-              Weekly Talent Drops: Mondays @ 9AM EST
+            <div className="inline-flex items-center gap-2 bg-red-50 text-red-700 px-4 py-1.5 rounded-full text-sm font-bold border border-red-100 animate-fade-in">
+              <Flame size={14} className="fill-red-500 text-red-500" />
+              Remote-First MCA Talent. Delivered Weekly.
             </div>
 
             <div>
-              <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-4">
-                Pre-Vetted Solar Reps. <br />
-                <span className="text-amber-600">Delivered Weekly.</span>
+              <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-6">
+                Your Fixed-Cost<br/>
+                <span className="text-amber-600">Remote Bench</span> for<br/>
+                MCA shops.
               </h1>
-              
-              <p className="text-lg text-slate-900 font-medium mb-4">
-                <strong>Simplify solar sales recruiting. Eliminate high placement fees.</strong> We stock your private bench with 3–10 vetted Setters every Monday. Watch the 90-120 sec audition. Hire instantly. <strong>$1,000/mo flat.</strong>
-              </p>
-
-              <p className="text-lg text-slate-500 leading-relaxed">
-                You don't need "ammunition." You need a <strong>reliable supply chain of talent.</strong> Never let an empty seat burn your leads again.
-              </p>
+                <p className="text-lg text-slate-600 mb-4 leading-relaxed max-w-lg">Talent Scope is a subscription-based <strong>talent logistics platform</strong> for Merchant Cash Advance companies running remote sales teams. We deliver a continuous flow of pre-vetted <strong>Outbound Funding Specialists</strong> so empty seats never slow your dial capacity.
+                </p>
+              <div className="space-y-3 mb-8 text-base text-slate-700">
+                <p className="flex items-start gap-3">
+                  <CheckCircle2 size={18} className="text-amber-600 flex-shrink-0 mt-0.5" />
+                  <span className="font-bold"><strong>Weekly Candidate Bench:</strong> Remote-Ready Outbound Specialists.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle2 size={18} className="text-amber-600 flex-shrink-0 mt-0.5" />
+                  <span className="font-bold"><strong>Video Auditions:</strong> Vetted for dial-pressure resilience, not resumes.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle2 size={18} className="text-amber-600 flex-shrink-0 mt-0.5" />
+                  <span className="font-bold"><strong>The Drop:</strong> Monday — Enterprise Scale @ 9 AM EST; Growth Core @ 2 PM EST.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle2 size={18} className="text-amber-600 flex-shrink-0 mt-0.5" />
+                  <span className="font-bold"><strong>Flat Rate:</strong> Flat monthly fee. No placement fees. No long-term contracts.</span>
+                </p>
+              </div>
             </div>
 
-            <Link
-              to="/schedule"
-              className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-amber-500/20 transition hover:-translate-y-1 flex items-center justify-center gap-2 w-full sm:w-auto"
-            >
-              See Actual Candidates Free
-              <ArrowRight size={20} />
-            </Link>
-
-            <p className="text-sm text-slate-600 font-medium flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg border border-slate-100 inline-block">
-              <Video size={16} className="text-slate-400" /> 
-              Watch 90-120 sec Loom auditions before you interview.
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="/schedule"
+                className="bg-amber-500 hover:bg-amber-600 text-white px-12 py-4 min-w-[270px] rounded-xl font-bold text-lg shadow-xl shadow-amber-500/20 transition hover:-translate-y-1 flex items-center justify-center gap-2 whitespace-nowrap"
+              >
+                Preview Candidates Free
+                <ArrowRight size={20} />
+              </Link>
+              <a
+                href="#faq"
+                className="flex items-center gap-2 px-6 py-4 bg-slate-50 rounded-xl border border-slate-100 text-slate-600 font-semibold text-sm hover:bg-slate-100 transition-colors cursor-pointer"
+              >
+                <ShieldCheck size={18} className="text-slate-400" />
+                Unlimited Bench Access.
+              </a>
+            </div>
+            <p className="text-sm text-slate-500 mt-3">
+              Month-to-month. Cancel anytime. Weekly Inventory Drops.
             </p>
-
-            {/* Feature Grid */}
-            <div className="grid grid-cols-3 gap-6 pt-4 border-t border-slate-100 mt-4">
-              <div className="flex flex-col items-start gap-1">
-                <Zap className="w-5 h-5 text-amber-600 flex-shrink-0" />
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Weekly Drops</span>
-                <span className="text-sm font-bold text-slate-900">3-10 New Reps/Wk</span>
-              </div>
-              <div className="flex flex-col items-start gap-1">
-                <TrendingUp className="w-5 h-5 text-green-600 flex-shrink-0" />
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">The Bench</span>
-                <span className="text-sm font-bold text-slate-900">Talent Stacks Up</span>
-              </div>
-              <div className="flex flex-col items-start gap-1">
-                <ShieldCheck className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Flat Rate</span>
-                <span className="text-sm font-bold text-slate-900">$0 Placement Fees</span>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-6 pt-2 text-sm font-medium text-slate-400">
-              <span className="flex items-center gap-1.5"><CheckCircle2 size={14} className="text-green-600" /> Trusted by 50+ Dealers</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 size={14} className="text-green-600" /> Unlimited Hires</span>
-            </div>
           </div>
 
           {/* Right Column: The Bench Visual */}
@@ -79,7 +75,7 @@ export default function Hero() {
             <div className="absolute top-0 right-0 w-[420px] h-[300px] rounded-2xl overflow-hidden shadow-2xl shadow-slate-200 z-0 transform rotate-2 hover:rotate-0 transition duration-500 group cursor-pointer border border-slate-100">
               <img 
                 src="/images/high-energy-sdr-team.jpg" 
-                alt="Remote solar sales floor"
+                alt="Remote financial services sales floor"
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-700 filter brightness-95"
               />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -102,27 +98,27 @@ export default function Hero() {
                   </div>
                   <div className="px-3 py-1 bg-amber-50 text-amber-700 text-xs font-bold rounded-full uppercase tracking-wider flex items-center gap-1 border border-amber-100">
                     <Lock size={10} />
-                    Your Private Bench
+                    Your Outbound Inventory
                   </div>
                 </div>
 
                 {/* Candidate List */}
                 <div className="space-y-3 relative">
-                  <CandidateRow name="Marcus Torres" role="Solar Setter • D2D Vet" score={9.8} />
+                  <CandidateRow name="Marcus Torres" role="Outbound Specialist • Bilingual" score={8.1} />
                   
                   {/* Active Candidate with Popover */}
                   <div className="relative">
-                    <CandidateRow name="Jordan Mills" role="Closer • $80K Avg" score={9.4} />
-                    <div className="absolute -right-2 -top-2 bg-gradient-to-r from-red-500 to-orange-500 text-white text-[10px] font-black px-2 py-1 rounded-full shadow-lg animate-pulse">
-                      🔥 RARE DROP
+                    <CandidateRow name="Jordan Mills" role="Outbound Specialist • 4yr Exp" score={9.5} />
+                    <div className="absolute -right-2 -top-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] font-black px-2 py-1 rounded-full shadow-lg animate-pulse">
+                      🔥 Top Performer
                     </div>
                   </div>
 
-                  <CandidateRow name="Ashley Chen" role="Lead Generator" score={9.6} />
+                  <CandidateRow name="Ashley Chen" role="Outbound Specialist • High Volume" score={8.6} />
                 </div>
 
                 <div className="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
-                    <span className="text-slate-400 font-medium">Closers Drop Rare</span>
+                    <span className="text-slate-400 font-medium">Next Drops: Mon 9 AM & 2 PM EST</span>
                     <span className="text-slate-300">● ● ●</span>
                 </div>
               </div>
@@ -132,14 +128,14 @@ export default function Hero() {
           {/* Mobile Fallback */}
           <div className="lg:hidden space-y-6">
             <div className="relative rounded-xl overflow-hidden shadow-lg border border-slate-100">
-              <img src="/images/high-energy-sdr-team.jpg" className="w-full h-48 object-cover" alt="Remote solar sales floor" />
+              <img src="/images/high-energy-sdr-team.jpg" className="w-full h-48 object-cover" alt="MCA sales floor" />
               <div className="absolute inset-0 flex items-center justify-center bg-black/10">
                 <Play size={40} fill="white" className="text-white" />
               </div>
             </div>
             <div className="bg-white rounded-xl shadow-xl border border-slate-100 p-6">
-              <CandidateRow name="Marcus Torres" role="Solar Setter • D2D Vet" score={9.8} />
-              <CandidateRow name="Jordan Mills" role="High-Ticket Closer" score={9.4} />
+              <CandidateRow name="Marcus Torres" role="Outbound Specialist • 5yr Exp" score={9.8} />
+              <CandidateRow name="Jordan Mills" role="Outbound Specialist • High Volume" score={9.4} />
             </div>
           </div>
 

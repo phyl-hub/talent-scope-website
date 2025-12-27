@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import { DollarSign, TrendingUp, AlertTriangle, Flame, Calculator } from 'lucide-react';
 
 export default function ROICalculator() {
-  const [leadCost, setLeadCost] = useState(50);
-  const [leadsPerMonth, setLeadsPerMonth] = useState(100);
-  const [closeRate, setCloseRate] = useState(20);
-  const [dealValue, setDealValue] = useState(7000);
+  const [leadCost, setLeadCost] = useState(75);
+  const [leadsPerMonth, setLeadsPerMonth] = useState(200);
+  const [closeRate, setCloseRate] = useState(18);
+  const [dealValue, setDealValue] = useState(5000);
 
   const calculateLoss = () => {
-    const potentialInstalls = Math.round(leadsPerMonth * (closeRate / 100));
-    const potentialRevenue = potentialInstalls * dealValue;
+    const potentialDeals = Math.round(leadsPerMonth * (closeRate / 100));
+    const potentialRevenue = potentialDeals * dealValue;
     const leadBurn = leadsPerMonth * leadCost;
-    return { potentialInstalls, potentialRevenue, leadBurn };
+    return { potentialDeals, potentialRevenue, leadBurn };
   };
 
-  const { potentialInstalls, potentialRevenue, leadBurn } = calculateLoss();
+  const { potentialDeals, potentialRevenue, leadBurn } = calculateLoss();
 
   return (
     <section className="py-20 bg-slate-900 text-white overflow-hidden relative">
@@ -28,13 +28,13 @@ export default function ROICalculator() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 text-amber-400 font-bold uppercase tracking-wider text-sm mb-3">
             <Calculator size={16} />
-            Revenue Potential Calculator
+            MCA Revenue Calculator
           </div>
           <h2 className="text-3xl md:text-5xl font-black mb-4">
-            Maximize Your <span className="text-amber-500">Lead Spend.</span>
+            Capture <span className="text-amber-500">Scalable Volume.</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Unfilled seats reduce ROI. Calculate the revenue potential of a fully staffed sales floor.
+            Empty desks destroy your funding volume. Calculate the revenue potential of a fully staffed MCA floor.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export default function ROICalculator() {
                 ${potentialRevenue.toLocaleString()}
               </div>
               <p className="text-sm text-slate-500 mb-8 relative z-10">
-                {potentialInstalls} additional installs per month
+                {potentialDeals} closed deals per month
               </p>
 
               <div className="space-y-3 relative z-10">
@@ -126,7 +126,7 @@ export default function ROICalculator() {
                 </div>
                 <div className="flex justify-between text-sm border-b border-slate-700 pb-2">
                   <span className="text-slate-400">Talent Scope Subscription</span>
-                  <span className="text-green-400 font-bold">$1,000/mo</span>
+                  <span className="text-green-400 font-bold">From $1,000/mo</span>
                 </div>
                 <div className="flex justify-between text-lg font-bold">
                   <span className="text-white">Potential Net Profit</span>
@@ -136,7 +136,7 @@ export default function ROICalculator() {
 
               <div className="mt-8 relative z-10">
                 <a href="/schedule" className="inline-flex items-center justify-center gap-2 w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 rounded-xl transition shadow-lg shadow-amber-500/20">
-                  Staff Your Team <TrendingUp size={18} />
+                  Start Your Stack <TrendingUp size={18} />
                 </a>
               </div>
             </div>
@@ -144,8 +144,8 @@ export default function ROICalculator() {
           </div>
         </div>
 
-        <p className="text-center text-slate-500 mt-8 text-sm">
-          Don't let leads go cold. Ensure every opportunity is worked by a qualified rep.
+        <p className="text-center text-slate-400 mt-8 text-sm">
+          <strong className="text-white">Every empty virtual seat is lost dials.</strong> Draft Outbound Funding Specialists today. They're dialing tomorrow.
         </p>
       </div>
     </section>

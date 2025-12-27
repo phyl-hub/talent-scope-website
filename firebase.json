@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "dist",
+    "site": "talent-scope-website-dec25",
     "ignore": [
       "firebase.json",
       "**/.*",

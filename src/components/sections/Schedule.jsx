@@ -17,16 +17,16 @@ export default function Schedule() {
         <div className="max-w-6xl mx-auto px-6">
           <p className="inline-flex items-center gap-2 text-sm font-bold text-red-600 bg-red-100 px-4 py-2 rounded-full mb-6">
             <AlertTriangle className="w-4 h-4" />
-            Stop Burning Leads. Start Stacking Talent.
+            Stop Burning CAC. Capture Your MCA Bench.
           </p>
           <h1 className="text-5xl md:text-6xl font-black text-slate-900 mb-6">
-            See the Stack. Watch the Tape. Draft Your Team.
+            See This Week's Drop. <span className="text-amber-600">Dominate Tomorrow.</span>
           </h1>
           <p className="text-2xl text-slate-600 mb-4">
-            15 minutes. We show you the <strong>ammunition</strong>. You decide if they can fight.
+            <strong>15 minutes.</strong> We show you this week's Outbound Funding Specialists. You watch the tape. You draft the best.
           </p>
           <p className="text-lg text-slate-500 max-w-2xl">
-            No pitch. No pressure. Just proof.
+            <strong>Hire for grit, not experience.</strong> Industry knowledge is taught in 20 minutes. Dial-pressure resilience isn't. Remote-ready inventory, every Monday.
           </p>
         </div>
       </div>
@@ -39,21 +39,21 @@ export default function Schedule() {
               <Calendar className="w-8 h-8 text-amber-600 flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-bold text-slate-900 mb-2">15-Minute Walkthrough</h3>
-                <p className="text-slate-600">See this week's bench. Setters ready to dial. Closers when available.</p>
+                <p className="text-slate-600">See this week's MCA bench—Outbound Funding Specialists vetted for sustained dial capacity and objection handling.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <Zap className="w-8 h-8 text-amber-500 flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-bold text-slate-900 mb-2">Watch the Tape</h3>
-                <p className="text-slate-600">90-sec Loom auditions. Hear them pitch. See if they can talk.</p>
+                <p className="text-slate-600">90-120 sec video auditions. Verify dial-pressure resilience and objection-handling speed.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <CheckCircle className="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-bold text-slate-900 mb-2">No Pitch</h3>
-                <p className="text-slate-600">We show. You decide. That's it.</p>
+                <h3 className="font-bold text-slate-900 mb-2">Remote-Ready</h3>
+                <p className="text-slate-600">Vetted for tech-readiness and the discipline to hit 300+ dials/day from any location.</p>
               </div>
             </div>
           </div>

@@ -22,9 +22,9 @@ export default function Navbar() {
         <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
           <Link 
             to="/schedule" 
-            className="hover:text-blue-600 transition"
+            className="hover:text-amber-600 transition font-bold"
           >
-            Schedule
+            Preview Candidates
           </Link>
           
           {/* LOGIC: 
@@ -59,8 +59,8 @@ export default function Navbar() {
           to="/schedule"
           className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-semibold transition shadow-lg shadow-amber-500/20 text-sm hover:-translate-y-0.5 flex flex-col items-center leading-tight"
         >
-          <span className="font-bold">See the Bench</span>
-          <span className="text-xs opacity-90">(Watch Looms Free 🎥)</span>
+          <span className="font-bold">See Candidates FREE</span>
+          <span className="text-xs opacity-90">(Watch The Tape 🎥)</span>
         </Link>
       </div>
     </nav>
