@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, ShieldCheck, CheckCircle2, Flame, RefreshCw } from 'lucide-react';
+import { Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Pricing() {
@@ -35,31 +35,36 @@ export default function Pricing() {
                 <span className="text-xl text-slate-600">/month</span>
               </div>
               <p className="text-lg text-slate-600 mt-2">For 5–10-seat virtual floors ready to eliminate hiring friction.</p>
+              <p className="text-sm text-slate-500 mt-2">Candidates remain on your bench for up to 30 days.</p>
 
               <ul className="mt-10 space-y-5">
-                <li className="flex items-start gap-4">
-                  <Zap className="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span className="font-semibold text-slate-900"><strong>Access to Standard Batch.</strong> Monday Drop @ 2 PM EST.</span>
+                <li className="flex items-start gap-3 text-base leading-relaxed text-slate-700">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">📬</span>
+                  <span><strong className="text-slate-900">2–4 Standard Batch</strong> candidates delivered weekly.</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <RefreshCw className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>Remote-Ready:</strong> Vetted for tech-readiness and remote discipline.</span>
+                <li className="flex items-start gap-3 text-base leading-relaxed text-slate-700">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">⏰</span>
+                  <span>Standard midday drop at <strong className="text-slate-900">2 PM EST</strong> every Monday.</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>Stack up to 20 Candidates</strong> in your portal</span>
+                <li className="flex items-start gap-3 text-base leading-relaxed text-slate-700">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">🧑‍💻</span>
+                  <span><strong className="text-slate-900">Remote-ready:</strong> Vetted for tech readiness and remote discipline.</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <ShieldCheck className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>The Tape Don't Lie</strong>—verify dial-pressure resilience</span>
+                <li className="flex items-start gap-3 text-base leading-relaxed text-slate-700">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">🗂️</span>
+                  <span><strong className="text-slate-900">Stack up to 20 candidates</strong> in your portal.</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <RefreshCw className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>Instant Replacement.</strong> Rep quits? Draft another.</span>
+                <li className="flex items-start gap-3 text-base leading-relaxed text-slate-700">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">🎬</span>
+                  <span><strong className="text-slate-900">The tape don’t lie:</strong> Verify dial-pressure resilience.</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>$0 Placement Fees. Unlimited hires.</strong></span>
+                <li className="flex items-start gap-3 text-base leading-relaxed text-slate-700">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">🔄</span>
+                  <span><strong className="text-slate-900">Instant replacement:</strong> Rep quits? Draft another.</span>
+                </li>
+                <li className="flex items-start gap-3 text-base leading-relaxed text-slate-700">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">🆓</span>
+                  <span><strong className="text-slate-900">$0 placement fees</strong> with unlimited hires.</span>
                 </li>
               </ul>
 
@@ -84,23 +89,32 @@ export default function Pricing() {
                 <span className="text-xl opacity-90">/month</span>
               </div>
               <p className="text-lg opacity-90 mt-2">For 10+ seat teams that need continuous dial capacity.</p>
+              <p className="text-sm opacity-70 mt-2">Candidates remain on your bench for up to 30 days.</p>
 
               <ul className="mt-10 space-y-5">
-                <li className="flex items-start gap-4">
-                  <Zap className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold"><strong>Exclusive Priority Access to Top 10% Elite Batch.</strong> Monday Drop @ 9 AM EST.</span>
+                <li className="flex items-start gap-3 text-base leading-relaxed opacity-95">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">📋</span>
+                  <span>Everything in <strong>Growth Core</strong>.</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <Flame className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold"><strong>Stack up to 50 Candidates</strong> in your portal</span>
+
+                <li className="flex items-start gap-3 text-base leading-relaxed opacity-95">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">🌅</span>
+                  <span><strong>Priority early morning drop</strong> at 9 AM EST every Monday.</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <ShieldCheck className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold">Everything in Growth Core</span>
+
+                <li className="flex items-start gap-3 text-base leading-relaxed opacity-95">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">👑</span>
+                  <span><strong>5–8 Elite Batch</strong> candidates delivered weekly.</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <RefreshCw className="w-6 h-6 text-blue-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold">Keep your 10+ seat floor at max dial capacity</span>
+
+                <li className="flex items-start gap-3 text-base leading-relaxed opacity-95">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">⚡</span>
+                  <span><strong>Priority access</strong> to the top 10% Elite Batch.</span>
+                </li>
+
+                <li className="flex items-start gap-3 text-base leading-relaxed opacity-95">
+                  <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">🗄️</span>
+                  <span><strong>Stack up to 50 candidates</strong> in your portal.</span>
                 </li>
               </ul>
 
