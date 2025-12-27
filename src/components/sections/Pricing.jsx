@@ -39,7 +39,7 @@ export default function Pricing() {
               <ul className="mt-10 space-y-5">
                 <li className="flex items-start gap-4">
                   <Zap className="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span className="font-semibold text-slate-900"><strong>3–5 Outbound Funding Specialists</strong> dropped every Monday @ 2 PM EST</span>
+                    <span className="font-semibold text-slate-900"><strong>2–4 Outbound Funding Specialists</strong> dropped every Monday @ 2 PM EST</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <RefreshCw className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
@@ -88,7 +88,7 @@ export default function Pricing() {
               <ul className="mt-10 space-y-5">
                 <li className="flex items-start gap-4">
                   <Zap className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold"><strong>8–12 Outbound Funding Specialists</strong> dropped every Monday @ 9 AM EST (Priority)</span>
+                  <span className="font-semibold"><strong>5–8 Outbound Funding Specialists</strong> dropped every Monday @ 9 AM EST (Priority)</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <Flame className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />

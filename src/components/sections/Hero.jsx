@@ -23,7 +23,7 @@ export default function Hero() {
                 <span className="text-amber-600">Remote Bench</span> for<br/>
                 MCA shops.
               </h1>
-                <p className="text-lg text-slate-600 mb-4 leading-relaxed max-w-lg">Talent Scope is a subscription-based <strong>talent logistics platform</strong> for Merchant Cash Advance companies running remote sales teams. We deliver a continuous flow of pre-vetted <strong>Outbound Funding Specialists</strong> so empty seats never slow your dial capacity.
+                <p className="text-lg text-slate-600 mb-4 leading-relaxed max-w-lg">Access a vetted bench of <strong>Outbound Funding Specialists</strong> so empty seats never slow your dial capacity.
                 </p>
               <div className="space-y-3 mb-8 text-base text-slate-700">
                 <p className="flex items-start gap-3">
@@ -32,15 +32,11 @@ export default function Hero() {
                 </p>
                 <p className="flex items-start gap-3">
                   <CheckCircle2 size={18} className="text-amber-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-bold"><strong>Video Auditions:</strong> Vetted for dial-pressure resilience, not resumes.</span>
+                  <span className="font-bold"><strong>Video Auditions:</strong> Vetted for dial-pressure resilience.</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <CheckCircle2 size={18} className="text-amber-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-bold"><strong>The Drop:</strong> Monday — Enterprise Scale @ 9 AM EST; Growth Core @ 2 PM EST.</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle2 size={18} className="text-amber-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-bold"><strong>Flat Rate:</strong> Flat monthly fee. No placement fees. No long-term contracts.</span>
+                  <span className="font-bold"><strong>Flat Rate:</strong> Flat monthly fee. No long-term contracts.</span>
                 </p>
               </div>
             </div>
@@ -58,7 +54,7 @@ export default function Hero() {
                 className="flex items-center gap-2 px-6 py-4 bg-slate-50 rounded-xl border border-slate-100 text-slate-600 font-semibold text-sm hover:bg-slate-100 transition-colors cursor-pointer"
               >
                 <ShieldCheck size={18} className="text-slate-400" />
-                Unlimited Bench Access.
+                No placement fees.
               </a>
             </div>
             <p className="text-sm text-slate-500 mt-3">
@@ -115,11 +111,6 @@ export default function Hero() {
                   </div>
 
                   <CandidateRow name="Ashley Chen" role="Outbound Specialist • High Volume" score={8.6} />
-                </div>
-
-                <div className="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
-                    <span className="text-slate-400 font-medium">Next Drops: Mon 9 AM & 2 PM EST</span>
-                    <span className="text-slate-300">● ● ●</span>
                 </div>
               </div>
             </div>

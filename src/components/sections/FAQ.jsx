@@ -8,7 +8,7 @@ const faqs = [
       <>
         <p className="mb-4">Your subscription provides continuous, unlimited access to your Outbound Inventory. It's a fixed-cost logistics utility designed to protect your <strong>LTV/CAC ratio</strong>.</p>
         <ul className="list-disc pl-6 space-y-2">
-          <li><strong>The Drop (Weekly Inventory Drops):</strong> Weekly delivery of <strong>3–5</strong> (Growth Core, dropped Monday @ <strong>2 PM EST</strong>) or <strong>8–12</strong> (Enterprise Scale, dropped Monday @ <strong>9 AM EST</strong>) Outbound Funding Specialists.</li>
+          <li><strong>The Drop (Weekly Inventory Drops):</strong> Weekly delivery of <strong>2–4</strong> (Growth Core, dropped Monday @ <strong>2 PM EST</strong>) or <strong>5–8</strong> (Enterprise Scale, dropped Monday @ <strong>9 AM EST</strong>) Outbound Funding Specialists.</li>
           <li><strong>The Tape:</strong> Mandatory <strong>90–120s</strong> video auditions ("The Tape Don't Lie") assessed against our Core 5: Revenue Resilience (30%), Communication Fluency & Pacing (20%), Executive Presence & Authority (20%), Incentive Alignment (20%), Operational Readiness (10%).</li>
           <li><strong>Unlimited Hires:</strong> Hire as many reps as you need with <strong>$0 placement fees</strong>.</li>
           <li><strong>Billing:</strong> Month-to-month. Cancel anytime.</li>
@@ -31,7 +31,7 @@ const faqs = [
     question: "What is 'Stacking' and why is it crucial for my virtual MCA floor?",
     answer: (
       <>
-        <p className="mb-3"><strong>Stacking</strong> builds operational insurance. Your industry loses 50% of reps every quarter. Candidates remain on your bench for up to <strong>30 days</strong>. Across four weekly drops, your bench grows to <strong>20–50</strong> Outbound Funding Specialists.</p>
+        <p className="mb-3"><strong>Stacking</strong> builds operational insurance. Your industry loses 50% of reps every quarter. Candidates remain on your bench for up to <strong>30 days</strong>. After four weekly drops, your bench typically grows to <strong>8–16</strong> (Growth Core) or <strong>20–32</strong> (Enterprise Scale) Outbound Funding Specialists.</p>
         <p>When turnover hits (it will), you draft a replacement <strong>instantly</strong>. Result: <strong>your dials never stop</strong> and your <strong>CAC stays fixed</strong>—replacement costs are marginal instead of a <strong>$5K–$20K</strong> spike.</p>
       </>
     )
@@ -41,8 +41,8 @@ const faqs = [
     question: "What does Unlimited Bench Access mean?",
     answer: (
       <>
-        <p className="mb-3"><strong>Unlimited Bench Access:</strong> Stack as many Outbound Funding Specialists on your bench as you need. Every week, we drop fresh inventory—<strong>3–5 candidates (Growth Core)</strong> or <strong>8–12 candidates (Enterprise Scale)</strong>—directly into your portal.</p>
-        <p className="mb-3">Your bench capacity grows exponentially. <strong>30 candidates on your bench after 4 weeks</strong> (Growth Core) gives you operational insurance: when a rep quits, you draft a replacement instantly. No placement fees. No per-head costs. No downtime.</p>
+        <p className="mb-3"><strong>Unlimited Bench Access:</strong> Stack as many Outbound Funding Specialists on your bench as you need. Every week, we drop fresh inventory—<strong>2–4 candidates (Growth Core)</strong> or <strong>5–8 candidates (Enterprise Scale)</strong>—directly into your portal.</p>
+        <p className="mb-3">Your bench capacity grows consistently. <strong>8–16 candidates on your bench after 4 weeks</strong> (Growth Core) gives you operational insurance: when a rep quits, you draft a replacement instantly. No placement fees. No per-head costs. No downtime.</p>
         <p>The subscription provides continuous access to inventory; you control hiring decisions and deployment.</p>
       </>
     )
