@@ -4,110 +4,126 @@ import { Link } from 'react-router-dom';
 
 export default function Pricing() {
   return (
-    <section className="py-24 bg-slate-50" id="pricing">
+    <section className="py-16 bg-slate-950" id="pricing">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="inline-flex items-center gap-2 text-sm font-bold text-amber-600 bg-amber-50 px-4 py-2 rounded-full mb-6">
+        <div className="text-center mb-10">
+          <p className="inline-flex items-center gap-2 text-sm font-bold text-emerald-300 bg-emerald-500/10 px-4 py-2 rounded-full mb-5 border border-emerald-500/20">
             <Zap className="w-4 h-4" />
             Scalable Volume. Fixed Cost.
           </p>
-          <h2 className="text-5xl md:text-6xl font-black tracking-tight text-slate-900">
-            Stop Paying <span className="text-red-600">$5K-$20K</span> Per Hire.
+          <h2 className="text-5xl md:text-6xl font-black tracking-tight text-slate-100">
+            Stop paying <span className="text-emerald-400">$5K-$20K</span> per hire.
           </h2>
-          <p className="text-2xl text-slate-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-2xl text-slate-300 mt-4 max-w-2xl mx-auto">
             <strong>Your MCA floor loses 50% of reps every quarter. Variable fees destroy your P&L.</strong></p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto mb-14">
           
           {/* CORE PLAN */}
-          <div className="relative bg-white rounded-3xl shadow-2xl border-2 border-slate-200 overflow-hidden">
-            <div className="absolute top-0 right-0 bg-black text-white px-6 py-2 rounded-bl-2xl font-bold text-sm">
+          <div className="relative bg-slate-900/60 rounded-3xl shadow-2xl border-2 border-slate-800 overflow-hidden">
+            <div className="absolute top-0 right-0 bg-emerald-400 text-slate-950 px-6 py-2 rounded-bl-2xl font-bold text-sm">
               MOST POPULAR
             </div>
             <div className="pt-12 pb-10 px-10">
-              <h3 className="text-3xl font-black text-slate-900">Growth Core</h3>
+              <h3 className="text-3xl font-black text-slate-100">Growth Core</h3>
               <div className="mt-6 flex items-baseline gap-2">
-                <span className="text-6xl font-black text-slate-900">$1,000</span>
-                <span className="text-xl text-slate-600">/month</span>
+                <span className="text-6xl font-black text-slate-100">$1,000</span>
+                <span className="text-xl text-slate-400">/month</span>
               </div>
-              <p className="text-lg text-slate-600 mt-2">For 5–10-seat virtual floors ready to eliminate hiring friction.</p>
+              <p className="text-lg text-slate-300 mt-2">For 5–10-seat virtual floors ready to eliminate hiring friction.</p>
 
               <ul className="mt-10 space-y-5">
                 <li className="flex items-start gap-4">
-                  <Zap className="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span className="font-semibold text-slate-900"><strong>2–4 Outbound Funding Specialists</strong> dropped every Monday @ 2 PM EST</span>
+                  <CheckCircle2 className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-100">Candidates remain on your bench for up to 30 days.</span>
                 </li>
                 <li className="flex items-start gap-4">
-                  <RefreshCw className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>Remote-Ready:</strong> Vetted for tech-readiness and remote discipline.</span>
+                  <Zap className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
+                    <span className="font-semibold text-slate-100"><strong>2–4 Standard Batch candidates</strong> delivered weekly.</span>
                 </li>
                 <li className="flex items-start gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>Stack up to 20 Candidates</strong> in your portal</span>
+                  <CheckCircle2 className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-100">Standard midday drop at 2 PM EST every Monday.</span>
                 </li>
                 <li className="flex items-start gap-4">
-                  <ShieldCheck className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>The Tape Don't Lie</strong>—verify dial-pressure resilience</span>
+                  <RefreshCw className="w-6 h-6 text-slate-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-100"><strong>Remote-ready:</strong> Vetted for tech readiness and remote discipline.</span>
                 </li>
                 <li className="flex items-start gap-4">
-                  <RefreshCw className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>Instant Replacement.</strong> Rep quits? Draft another.</span>
+                  <CheckCircle2 className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-100">Stack up to 20 candidates in your portal.</span>
                 </li>
                 <li className="flex items-start gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-900"><strong>$0 Placement Fees. Unlimited hires.</strong></span>
+                  <ShieldCheck className="w-6 h-6 text-slate-300 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-100"><strong>The tape don't lie:</strong> Verify dial-pressure resilience.</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <RefreshCw className="w-6 h-6 text-slate-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-100"><strong>Instant replacement:</strong> Rep quits? Draft another.</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-slate-100"><strong>$0 placement fees with unlimited hires.</strong></span>
                 </li>
               </ul>
 
-              <Link to="/schedule" className="mt-12 block w-full bg-amber-600 hover:bg-amber-700 text-white font-bold text-lg py-5 rounded-xl text-center shadow-xl hover:shadow-2xl transition hover:-translate-y-1">
+              <Link to="/schedule" className="mt-10 block w-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold text-lg py-4 rounded-xl text-center shadow-xl hover:shadow-2xl transition hover:-translate-y-1">
                 View first candidates for FREE
               </Link>
-              <p className="text-slate-500 mt-4 text-sm text-center">
+              <p className="text-slate-400 mt-3 text-sm text-center">
                 Month-to-month. Cancel anytime. Weekly Inventory Drops.
               </p>
             </div>
           </div>
 
           {/* SCALE PLAN */}
-          <div className="relative bg-gradient-to-br from-slate-900 to-black rounded-3xl shadow-3xl overflow-hidden text-white">
-            <div className="absolute top-0 left-0 bg-amber-400 text-black px-6 py-2 rounded-br-2xl font-bold text-sm">
+          <div className="relative bg-gradient-to-br from-slate-900 to-black rounded-3xl shadow-3xl overflow-hidden text-white border border-slate-800">
+            <div className="absolute top-0 left-0 bg-slate-100 text-slate-950 px-6 py-2 rounded-br-2xl font-bold text-sm">
               HIGH VOLUME
             </div>
             <div className="pt-12 pb-10 px-10">
               <h3 className="text-3xl font-black">Enterprise Scale</h3>
               <div className="mt-6 flex items-baseline gap-2">
                 <span className="text-6xl font-black">$1,800</span>
-                <span className="text-xl opacity-90">/month</span>
+                <span className="text-xl text-slate-400">/month</span>
               </div>
-              <p className="text-lg opacity-90 mt-2">For 10+ seat teams that need continuous dial capacity.</p>
+              <p className="text-lg text-slate-300 mt-2">For 10+ seat teams that need continuous dial capacity.</p>
 
               <ul className="mt-10 space-y-5">
                 <li className="flex items-start gap-4">
-                  <Zap className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold"><strong>5–8 Outbound Funding Specialists</strong> dropped every Monday @ 9 AM EST (Priority)</span>
+                  <CheckCircle2 className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold">Candidates remain on your bench for up to 30 days.</span>
                 </li>
                 <li className="flex items-start gap-4">
-                  <Flame className="w-6 h-6 text-amber-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold"><strong>Stack up to 50 Candidates</strong> in your portal</span>
+                  <ShieldCheck className="w-6 h-6 text-emerald-300 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold">Everything in Growth Core.</span>
                 </li>
                 <li className="flex items-start gap-4">
-                  <ShieldCheck className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold">Everything in Growth Core</span>
+                  <Zap className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold">Priority early morning drop at 9 AM EST every Monday.</span>
                 </li>
                 <li className="flex items-start gap-4">
-                  <RefreshCw className="w-6 h-6 text-blue-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold">Keep your 10+ seat floor at max dial capacity</span>
+                  <Zap className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold"><strong>5–8 Elite Batch candidates</strong> delivered weekly.</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <Flame className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold">Priority access to the top 10% Elite Batch.</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold">Stack up to 50 candidates in your portal.</span>
                 </li>
               </ul>
 
-              <Link to="/schedule" className="mt-12 block w-full bg-white text-slate-900 hover:bg-slate-100 font-bold text-lg py-5 rounded-xl text-center shadow-xl hover:shadow-2xl transition hover:-translate-y-1">
+              <Link to="/schedule" className="mt-10 block w-full bg-emerald-400 text-slate-950 hover:bg-emerald-300 font-bold text-lg py-4 rounded-xl text-center shadow-xl hover:shadow-2xl transition hover:-translate-y-1">
                 View first candidates for FREE
               </Link>
-              <p className="opacity-60 mt-4 text-sm text-center">
+              <p className="text-slate-400 mt-3 text-sm text-center">
                 Month-to-month. Cancel anytime. Weekly Inventory Drops.
               </p>
             </div>

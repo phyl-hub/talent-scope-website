@@ -12,12 +12,12 @@ export default {
       },
       colors: {
         brand: {
-          dark: '#0B1120',      // Deep Navy
-          card: '#151e32',      // Lighter Navy
-          primary: '#0EA5E9',   // Electric Blue
-          accent: '#14B8A6',    // Teal
-          text: '#F8FAFC',      // White
-          muted: '#94A3B8',     // Grey text
+          dark: '#020617',      // slate-950
+          card: '#0f172a',      // slate-900
+          primary: '#34d399',   // emerald-400
+          accent: '#34d399',    // emerald-400
+          text: '#e2e8f0',      // slate-200
+          muted: '#94a3b8',     // slate-400
         }
       },
       animation: {

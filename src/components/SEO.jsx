@@ -1,11 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const siteUrl = 'https://talent-scope.io';
+const siteUrl = 'https://isobench.com';
 const defaultImage = `${siteUrl}/images/high-energy-sdr-team.jpg`;
 
 export default function SEO({
-  title = 'Remote MCA Outbound Talent | Outbound Funding Specialists | Talent Scope From $1,000/mo',
+  title = 'Remote MCA Outbound Talent | Outbound Funding Specialists | ISO Bench From $1,000/mo',
   description = 'Replace $5K-$20K placement fees with fixed-cost MCA talent logistics. Remote-ready Outbound Funding Specialists. Weekly drops. Sustained dial capacity. Unlimited hires. Zero placement fees.',
   path = '/',
   image = defaultImage,
@@ -21,7 +21,7 @@ export default function SEO({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="robots" content="index, follow" />
-      <meta name="author" content="Talent Scope" />
+      <meta name="author" content="ISO Bench" />
       <link rel="canonical" href={url} />
 
       {/* Open Graph */}
@@ -30,7 +30,7 @@ export default function SEO({
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
-      <meta property="og:site_name" content="Talent Scope" />
+      <meta property="og:site_name" content="ISO Bench" />
       <meta property="og:locale" content="en_US" />
 
       {/* Twitter */}

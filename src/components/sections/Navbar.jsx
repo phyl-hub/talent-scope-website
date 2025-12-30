@@ -8,21 +8,21 @@ export default function Navbar() {
   const isHomePage = location.pathname === '/';
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+    <nav className="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
         
         {/* Logo - Always goes to Home */}
         <Link to="/" className="flex items-center gap-2">
           {/* Use the public folder path */}
-          <img src="/images/talent-scope-logo.png" alt="Talent Scope Logo" className="w-8 h-8 object-contain" />
-          <span className="text-xl font-bold tracking-tight text-slate-900">Talent Scope</span>
+          <img src="/images/talent-scope-logo.png" alt="ISO Bench Logo" className="w-8 h-8 object-contain" />
+          <span className="text-xl font-bold tracking-tight text-slate-100">ISO Bench</span>
         </Link>
         
         {/* Links - Smart Logic */}
-        <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
+        <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-400">
           <Link 
             to="/schedule" 
-            className="hover:text-amber-600 transition font-bold"
+            className="hover:text-emerald-400 transition font-bold"
           >
             Preview Candidates
           </Link>
@@ -34,21 +34,21 @@ export default function Navbar() {
           
           <a 
             href={isHomePage ? "#compare" : "/#compare"} 
-            className="hover:text-blue-600 transition"
+            className="hover:text-emerald-400 transition"
           >
             Compare
           </a>
 
           <a 
             href={isHomePage ? "#how" : "/#how"} 
-            className="hover:text-blue-600 transition"
+            className="hover:text-emerald-400 transition"
           >
             How it Works
           </a>
 
           <a 
             href={isHomePage ? "#pricing" : "/#pricing"} 
-            className="hover:text-blue-600 transition"
+            className="hover:text-emerald-400 transition"
           >
             Pricing
           </a>
@@ -57,10 +57,10 @@ export default function Navbar() {
         {/* CTA */}
         <Link
           to="/schedule"
-          className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-semibold transition shadow-lg shadow-amber-500/20 text-sm hover:-translate-y-0.5 flex flex-col items-center leading-tight"
+          className="bg-emerald-400 hover:bg-emerald-300 text-slate-950 px-6 py-2.5 rounded-full font-semibold transition shadow-lg shadow-emerald-500/10 text-sm hover:-translate-y-0.5 flex flex-col items-center leading-tight"
         >
           <span className="font-bold">See Candidates FREE</span>
-          <span className="text-xs opacity-90">(Watch The Tape 🎥)</span>
+          <span className="text-xs opacity-80">(Watch The Tape)</span>
         </Link>
       </div>
     </nav>

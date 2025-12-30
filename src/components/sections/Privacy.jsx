@@ -5,40 +5,40 @@ import SEO from '../SEO';
 
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-white font-sans text-slate-900">
+    <div className="min-h-screen bg-slate-950 font-sans text-slate-100">
       <SEO
         path="/privacy"
-        title="Talent Scope Privacy Policy | Candidate & Client Data Protection"
-        description="Learn how Talent Scope collects, uses, and protects candidate videos, resumes, and client data for the video-vetted Outbound Bench subscription."
+        title="ISO Bench Privacy Policy | Candidate & Client Data Protection"
+        description="Learn how ISO Bench collects, uses, and protects candidate videos, resumes, and client data for the video-vetted Outbound Bench subscription."
       />
       <Navbar />
 
       <main className="max-w-4xl mx-auto px-6 py-20">
         
         {/* Header */}
-        <div className="mb-12 border-b border-slate-200 pb-8">
-          <h1 className="text-4xl font-bold tracking-tight text-slate-900 mb-4">
+        <div className="mb-10 border-b border-slate-800 pb-8">
+          <h1 className="text-4xl font-bold tracking-tight text-slate-100 mb-4">
             Privacy Policy
           </h1>
-          <p className="text-lg text-slate-500">
+          <p className="text-lg text-slate-300">
             How we collect, use, and protect your data in our candidate pipeline service.
           </p>
-          <div className="mt-4 text-sm text-slate-400 font-medium uppercase tracking-wider">
+          <div className="mt-4 text-sm text-slate-500 font-medium uppercase tracking-wider">
             Effective Date: January 1, 2025 | Last Updated: January 2025
           </div>
-          <p className="mt-4 text-sm text-amber-600 font-bold">
+          <p className="mt-4 text-sm text-emerald-300 font-bold">
             This Privacy Policy is legally binding. By using our service or submitting candidate data, you consent to these practices.
           </p>
         </div>
 
         {/* Policy Content */}
-        <div className="space-y-12 text-slate-600 leading-relaxed">
+        <div className="space-y-12 text-slate-300 leading-relaxed">
           
           {/* 1. Introduction */}
           <section>
-            <h2 className="text-xl font-bold text-slate-900 mb-4">1. Introduction & Scope</h2>
+            <h2 className="text-xl font-bold text-slate-100 mb-4">1. Introduction & Scope</h2>
             <p className="mb-4">
-              Talent Scope Group LLC ("Talent Scope," "we," "us," "our") is a **Fixed-Cost Talent Supply Partner**—a subscription-based fixed-cost talent supply service operating under Wyoming law. This Privacy Policy governs how we collect, use, disclose, and protect personal data and biometric information from:
+              ISO Bench is a brand name operated by Talent Scope Group LLC ("ISO Bench," "we," "us," "our"). We are a **Fixed-Cost Talent Supply Partner**—a subscription-based fixed-cost talent supply service operating under Wyoming law. This Privacy Policy governs how we collect, use, disclose, and protect personal data and biometric information from:
             </p>
             <ul className="list-disc pl-6 space-y-2 mb-4">
               <li>Candidates who submit video applications and resumes</li>
@@ -46,7 +46,7 @@ export default function PrivacyPolicy() {
               <li>Website visitors and users</li>
             </ul>
             <p>
-              This policy complies with applicable privacy laws including GDPR (EU), CCPA (California), PIPEDA (Canada), and federal US privacy standards. By submitting data to Talent Scope, you consent to the collection and use of information as described in this policy.
+              This policy complies with applicable privacy laws including GDPR (EU), CCPA (California), PIPEDA (Canada), and federal US privacy standards. By submitting data to ISO Bench, you consent to the collection and use of information as described in this policy.
             </p>
           </section>
 
@@ -155,7 +155,7 @@ export default function PrivacyPolicy() {
               <div>
                 <h3 className="font-bold text-slate-900 mb-2">4.1 Candidates: Shared With Employers (Subscribers)</h3>
                 <p className="text-sm mb-3">
-                  By submitting a video and resume, you explicitly authorize Talent Scope to share your profile with our paid subscribers. This is the core function of our service.
+                  By submitting a video and resume, you explicitly authorize ISO Bench (operated by Talent Scope Group LLC) to share your profile with our paid subscribers. This is the core function of our service.
                 </p>
                 <p className="text-sm mb-3">
                   <strong>What Employers See:</strong>
@@ -169,7 +169,7 @@ export default function PrivacyPolicy() {
                   <li>Availability status</li>
                 </ul>
                 <p className="text-sm mt-3 text-red-600 font-bold">
-                  IMPORTANT: Once shared with an employer, Talent Scope cannot retroactively delete your video or data from their systems.
+                  IMPORTANT: Once shared with an employer, we cannot retroactively delete your video or data from their systems.
                 </p>
               </div>
 
@@ -215,14 +215,14 @@ export default function PrivacyPolicy() {
                 </table>
 
                 <p className="text-sm mt-4 bg-blue-50 p-3 rounded">
-                  <strong>International Data Transfers:</strong> Some processors are located outside the EU/US. Talent Scope uses Standard Contractual Clauses (SCCs) and Data Processing Agreements (DPAs) to ensure GDPR compliance.
+                  <strong>International Data Transfers:</strong> Some processors are located outside the EU/US. Talent Scope Group LLC uses Standard Contractual Clauses (SCCs) and Data Processing Agreements (DPAs) to support GDPR compliance.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-bold text-slate-900 mb-2">4.3 No Sale of Data</h3>
                 <p className="text-sm">
-                  Talent Scope does NOT sell, broker, or monetize candidate data independently. Your data is shared only with employers as part of our pipeline service.
+                  Talent Scope Group LLC does NOT sell, broker, or monetize candidate data independently. Your data is shared only with employers as part of our pipeline service.
                 </p>
               </div>
             </div>
@@ -247,7 +247,7 @@ export default function PrivacyPolicy() {
               <div>
                 <h3 className="font-bold text-slate-900 mb-2">5.2 Right to Deletion (Right to be Forgotten)</h3>
                 <p className="mb-2">
-                  You may request deletion of your personal data at any time by emailing legal@talent-scope.io. We will:
+                  You may request deletion of your personal data at any time by emailing legal@isobench.com. We will:
                 </p>
                 <ul className="list-disc pl-6 space-y-1 mb-3">
                   <li>Delete your profile from the active "Weekly Menu" within 5 business days</li>
@@ -262,7 +262,7 @@ export default function PrivacyPolicy() {
               <div>
                 <h3 className="font-bold text-slate-900 mb-2">5.3 Right to Data Portability</h3>
                 <p>
-                  You may request a machine-readable copy of your personal data in CSV or JSON format. Request via legal@talent-scope.io.
+                  You may request a machine-readable copy of your personal data in CSV or JSON format. Request via legal@isobench.com.
                 </p>
               </div>
             </div>
@@ -287,7 +287,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <p>
-                <strong>How to Request:</strong> Email legal@talent-scope.io with your name and original submission date. We will respond within 30 days with details about your AI scores and the ability to appeal.
+                <strong>How to Request:</strong> Email legal@isobench.com with your name and original submission date. We will respond within 30 days with details about your AI scores and the ability to appeal.
               </p>
             </div>
           </section>
@@ -299,22 +299,22 @@ export default function PrivacyPolicy() {
             <div className="space-y-4 text-sm">
               <div className="border-l-4 border-blue-500 pl-4">
                 <p className="font-bold text-slate-900">🇪🇺 GDPR (EU & UK)</p>
-                <p className="mt-2">You have additional rights including: right to access, rectification, erasure, restriction, portability, and objection to processing. Contact: legal@talent-scope.io</p>
+                <p className="mt-2">You have additional rights including: right to access, rectification, erasure, restriction, portability, and objection to processing. Contact: legal@isobench.com</p>
               </div>
 
               <div className="border-l-4 border-blue-500 pl-4">
                 <p className="font-bold text-slate-900">🇺🇸 CCPA (California)</p>
-                <p className="mt-2">California residents have the right to know, delete, opt-out, and correct personal information. Request via legal@talent-scope.io with valid ID verification.</p>
+                <p className="mt-2">California residents have the right to know, delete, opt-out, and correct personal information. Request via legal@isobench.com with valid ID verification.</p>
               </div>
 
               <div className="border-l-4 border-blue-500 pl-4">
                 <p className="font-bold text-slate-900">🇨🇦 PIPEDA (Canada)</p>
-                <p className="mt-2">You have the right to access, correct, and request deletion of personal information. Request via legal@talent-scope.io</p>
+                <p className="mt-2">You have the right to access, correct, and request deletion of personal information. Request via legal@isobench.com</p>
               </div>
 
               <div className="border-l-4 border-blue-500 pl-4">
                 <p className="font-bold text-slate-900">🗽 Other US States</p>
-                <p className="mt-2">Talent Scope extends GDPR/CCPA-equivalent rights to all users regardless of location.</p>
+                <p className="mt-2">Talent Scope Group LLC extends GDPR/CCPA-equivalent rights to all users regardless of location.</p>
               </div>
             </div>
           </section>
@@ -348,7 +348,7 @@ export default function PrivacyPolicy() {
                 <li><strong>Breach Notification:</strong> In the event of a data breach, we will notify affected individuals within 72 hours per GDPR</li>
               </ul>
               <p className="mt-4 text-red-600 font-bold">
-                LIMITATION: No system is 100% secure. Talent Scope is not liable for unauthorized access or data breaches due to third-party negligence.
+                LIMITATION: No system is 100% secure. Talent Scope Group LLC is not liable for unauthorized access or data breaches due to third-party negligence.
               </p>
             </div>
           </section>
@@ -357,7 +357,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-bold text-slate-900 mb-4">10. Children's Privacy</h2>
             <p className="text-sm">
-              Talent Scope does not knowingly collect data from individuals under 18 years of age. If we discover that a minor has submitted an application, we will delete their data immediately. Candidates must be 18+ to apply.
+              Talent Scope Group LLC does not knowingly collect data from individuals under 18 years of age. If we discover that a minor has submitted an application, we will delete their data immediately. Candidates must be 18+ to apply.
             </p>
           </section>
 
@@ -365,7 +365,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-bold text-slate-900 mb-4">11. Changes to This Privacy Policy</h2>
             <p className="text-sm">
-              Talent Scope may update this Privacy Policy at any time. We will notify you of material changes via email or by updating the "Last Updated" date. Continued use of our service constitutes acceptance of updated terms.
+              Talent Scope Group LLC may update this Privacy Policy at any time. We will notify you of material changes via email or by updating the "Last Updated" date. Continued use of our service constitutes acceptance of updated terms.
             </p>
           </section>
 
@@ -376,11 +376,11 @@ export default function PrivacyPolicy() {
               For privacy-related inquiries, data access requests, deletion requests, or complaints:
             </p>
             <div className="bg-slate-50 p-6 rounded border border-slate-200">
-              <p className="font-semibold text-slate-900">Talent Scope Group LLC</p>
+              <p className="font-semibold text-slate-900">Talent Scope Group LLC (d/b/a ISO Bench)</p>
               <p className="text-sm text-slate-700 mt-2">1309 Coffeen Avenue STE 1200</p>
               <p className="text-sm text-slate-700">Sheridan, Wyoming 82801</p>
               <p className="text-sm text-slate-700 mt-3">
-                <a href="mailto:legal@talent-scope.io" className="text-blue-600 hover:text-blue-800">legal@talent-scope.io</a>
+                <a href="mailto:legal@isobench.com" className="text-blue-600 hover:text-blue-800">legal@isobench.com</a>
               </p>
               <p className="text-sm text-slate-600 mt-4 italic">
                 Response time: 30 days for all data requests per GDPR/CCPA standards.
@@ -388,7 +388,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <p className="text-sm mt-6">
-              <strong>EU Data Protection Authority:</strong> If you believe Talent Scope has violated your privacy rights, you may lodge a complaint with your local Data Protection Authority (DPA).
+              <strong>EU Data Protection Authority:</strong> If you believe Talent Scope Group LLC (d/b/a ISO Bench) has violated your privacy rights, you may lodge a complaint with your local Data Protection Authority (DPA).
             </p>
           </section>
 

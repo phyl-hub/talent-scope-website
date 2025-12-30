@@ -11,6 +11,6 @@
 
 /* Base styles just in case Tailwind fails to load immediately */
 body {
-  background-color: #0B1120; /* Deep Navy */
-  color: white;
+  background-color: #020617; /* slate-950 */
+  color: #e2e8f0; /* slate-200 */
 }

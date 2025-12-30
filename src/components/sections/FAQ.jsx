@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 const faqs = [
   {
@@ -80,7 +80,7 @@ const faqs = [
     question: "Who handles background checks and final employment compliance?",
     answer: (
       <>
-        <p className="mb-3">Talent Scope is your <strong>Fixed-Cost MCA Talent Logistics Utility</strong>, focused on delivering Remote-Ready Outbound Funding Specialists.</p>
+        <p className="mb-3">ISO Bench is your <strong>Fixed-Cost MCA Talent Logistics Utility</strong>, focused on delivering Remote-Ready Outbound Funding Specialists.</p>
         <p><strong>Final compliance</strong> remains the client's responsibility: background checks, required disclosures, and employment verification. This division of labor keeps talent costs <strong>fixed & low</strong> while preserving <strong>operational control</strong>.</p>
       </>
     )
@@ -123,21 +123,21 @@ const faqs = [
 
 function FAQItem({ id, question, answer, isOpen, onClick }) {
   return (
-    <div id={id} className="border-b border-slate-200 last:border-b-0">
+    <div id={id} className="border-b border-slate-800 last:border-b-0">
       <button
         onClick={onClick}
-        className="w-full py-6 flex justify-between items-start text-left gap-4 hover:bg-slate-50 transition-colors duration-200 px-2 -mx-2 rounded-lg"
+        className="w-full py-5 flex justify-between items-start text-left gap-4 hover:bg-slate-900/50 transition-colors duration-200 px-2 -mx-2 rounded-lg"
       >
-        <span className="text-lg font-semibold text-slate-900 pr-4">{question}</span>
+        <span className="text-lg font-semibold text-slate-100 pr-4">{question}</span>
         {isOpen ? (
-          <ChevronUp className="w-5 h-5 text-amber-600 flex-shrink-0 mt-1" />
+          <ChevronUp className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1" />
         ) : (
-          <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0 mt-1" />
+          <ChevronDown className="w-5 h-5 text-slate-500 flex-shrink-0 mt-1" />
         )}
       </button>
       {isOpen && (
         <div className="pb-6 px-2 -mx-2">
-          <div className="text-slate-600 leading-relaxed">{answer}</div>
+          <div className="text-slate-300 leading-relaxed">{answer}</div>
         </div>
       )}
     </div>
@@ -145,41 +145,36 @@ function FAQItem({ id, question, answer, isOpen, onClick }) {
 }
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(0);
-
-  // Auto-open based on URL hash (e.g., #faq-unlimited-bench)
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const hash = window.location.hash?.replace('#', '');
-      if (hash) {
-        const idx = faqs.findIndex((f) => f.id === hash);
-        if (idx >= 0) setOpenIndex(idx);
-      }
-    }
-  }, []);
+  const [openIndex, setOpenIndex] = useState(() => {
+    if (typeof window === 'undefined') return 0;
+    const hash = window.location.hash?.replace('#', '');
+    if (!hash) return 0;
+    const idx = faqs.findIndex((f) => f.id === hash);
+    return idx >= 0 ? idx : 0;
+  });
 
   const handleClick = (index) => {
     setOpenIndex(openIndex === index ? -1 : index);
   };
 
   return (
-    <section id="faq" className="py-24 bg-white">
+    <section id="faq" className="py-16 bg-slate-950">
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-amber-600 font-bold text-sm uppercase tracking-wider mb-4">
+        <div className="text-center mb-10">
+          <p className="text-emerald-300 font-bold text-sm uppercase tracking-wider mb-3">
             FAQ
           </p>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-black text-slate-100 mb-5">
             Questions Before You Subscribe
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
             No fluff. Just answers.
           </p>
         </div>
 
         {/* FAQ List */}
-        <div className="bg-slate-50 rounded-2xl p-8 md:p-12">
+        <div className="bg-slate-900/40 rounded-2xl p-6 md:p-8 border border-slate-800">
           {faqs.map((faq, index) => (
             <FAQItem
               key={index}
@@ -194,12 +189,12 @@ export default function FAQ() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-12">
-          <p className="text-slate-500 mb-4">Still have questions?</p>
+          <p className="text-slate-400 mb-4">Still have questions?</p>
           <a
-            href="mailto:sales@talent-scope.io"
-            className="text-amber-600 font-semibold hover:text-amber-700 transition-colors duration-200"
+            href="mailto:sales@isobench.com"
+            className="text-emerald-300 font-semibold hover:text-emerald-200 transition-colors duration-200"
           >
-            sales@talent-scope.io →
+            sales@isobench.com →
           </a>
         </div>
       </div>

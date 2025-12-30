@@ -1,21 +1,10 @@
-import React, { useEffect } from 'react' // Import useEffect
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { BrowserRouter, useLocation } from 'react-router-dom' // Import useLocation
+import { BrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
-
-// Create a simple "ScrollToTop" component
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  
-  useEffect(() => {
-    // When the path changes, scroll to the top
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
+import ScrollToTop from './ScrollToTop.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

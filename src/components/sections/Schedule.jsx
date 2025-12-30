@@ -11,49 +11,49 @@ export default function Schedule() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-white">
+    <section className="min-h-screen bg-slate-950">
       {/* Header - Full Width */}
-      <div className="bg-gradient-to-r from-red-50 to-amber-50 py-16">
+      <div className="bg-gradient-to-r from-slate-950 to-slate-900 py-12 border-b border-slate-800">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="inline-flex items-center gap-2 text-sm font-bold text-red-600 bg-red-100 px-4 py-2 rounded-full mb-6">
+          <p className="inline-flex items-center gap-2 text-sm font-bold text-emerald-300 bg-emerald-500/10 px-4 py-2 rounded-full mb-5 border border-emerald-500/20">
             <AlertTriangle className="w-4 h-4" />
             Stop Burning CAC. Capture Your MCA Bench.
           </p>
-          <h1 className="text-5xl md:text-6xl font-black text-slate-900 mb-6">
-            See This Week's Drop. <span className="text-amber-600">Dominate Tomorrow.</span>
+          <h1 className="text-5xl md:text-6xl font-black text-slate-100 mb-5">
+            See This Week's Drop. <span className="text-emerald-400">Dominate Tomorrow.</span>
           </h1>
-          <p className="text-2xl text-slate-600 mb-4">
+          <p className="text-2xl text-slate-300 mb-4">
             <strong>15 minutes.</strong> We show you this week's Outbound Funding Specialists. You watch the tape. You draft the best.
           </p>
-          <p className="text-lg text-slate-500 max-w-2xl">
+          <p className="text-lg text-slate-400 max-w-2xl">
             <strong>Hire for grit, not experience.</strong> Industry knowledge is taught in 20 minutes. Dial-pressure resilience isn't. Remote-ready inventory, every Monday.
           </p>
         </div>
       </div>
 
       {/* Benefits Section - Full Width */}
-      <div className="bg-white py-12">
+      <div className="bg-slate-950 py-10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="flex gap-4">
-              <Calendar className="w-8 h-8 text-amber-600 flex-shrink-0 mt-1" />
+              <Calendar className="w-8 h-8 text-emerald-400 flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-bold text-slate-900 mb-2">15-Minute Walkthrough</h3>
-                <p className="text-slate-600">See this week's MCA bench—Outbound Funding Specialists vetted for sustained dial capacity and objection handling.</p>
+                <h3 className="font-bold text-slate-100 mb-2">15-Minute Walkthrough</h3>
+                <p className="text-slate-300">See this week's MCA bench—Outbound Funding Specialists vetted for sustained dial capacity and objection handling.</p>
               </div>
             </div>
             <div className="flex gap-4">
-              <Zap className="w-8 h-8 text-amber-500 flex-shrink-0 mt-1" />
+              <Zap className="w-8 h-8 text-emerald-400 flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-bold text-slate-900 mb-2">Watch the Tape</h3>
-                <p className="text-slate-600">90-120 sec video auditions. Verify dial-pressure resilience and objection-handling speed.</p>
+                <h3 className="font-bold text-slate-100 mb-2">Watch the Tape</h3>
+                <p className="text-slate-300">90-120 sec video auditions. Verify dial-pressure resilience and objection-handling speed.</p>
               </div>
             </div>
             <div className="flex gap-4">
-              <CheckCircle className="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
+              <CheckCircle className="w-8 h-8 text-emerald-400 flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-bold text-slate-900 mb-2">Remote-Ready</h3>
-                <p className="text-slate-600">Vetted for tech-readiness and the discipline to hit 300+ dials/day from any location.</p>
+                <h3 className="font-bold text-slate-100 mb-2">Remote-Ready</h3>
+                <p className="text-slate-300">Vetted for tech-readiness and the discipline to hit 300+ dials/day from any location.</p>
               </div>
             </div>
           </div>
@@ -61,9 +61,22 @@ export default function Schedule() {
       </div>
 
       {/* GHL Booking Widget - Full Width */}
-      <div className="bg-gradient-to-b from-slate-50 to-white py-16">
+      <div className="bg-gradient-to-b from-slate-950 to-slate-900 py-12">
         <div className="w-full px-6">
           <div className="max-w-6xl mx-auto">
+            <div className="flex items-center gap-4 mb-6">
+              <img
+                src="/images/Philipp-Hoffschroer.jpg"
+                alt="Philipp Hoffschroer, Founder of ISO Bench"
+                className="w-14 h-14 rounded-full object-cover border border-slate-800"
+                loading="lazy"
+              />
+              <div className="leading-tight">
+                <div className="text-slate-100 font-bold">Philipp Hoffschroer</div>
+                <div className="text-slate-400 text-sm">Founder, ISO Bench</div>
+                <div className="text-slate-400 text-sm">You’ll speak directly with me on the call.</div>
+              </div>
+            </div>
             <iframe 
               src="https://api.leadconnectorhq.com/widget/booking/rI9xeSjenMoAmFFBcYNa" 
               style={{
@@ -82,10 +95,10 @@ export default function Schedule() {
       </div>
 
       {/* Fallback CTA */}
-      <div className="bg-white py-12">
+      <div className="bg-slate-950 py-10">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-slate-600 mb-4">
-            Can't find a time? Email <a href="mailto:hello@talent-scope.io" className="text-blue-600 hover:underline font-bold">hello@talent-scope.io</a>
+          <p className="text-slate-400 mb-4">
+            Can't find a time? Email <a href="mailto:hello@isobench.com" className="text-emerald-300 hover:underline font-bold">hello@isobench.com</a>
           </p>
         </div>
       </div>

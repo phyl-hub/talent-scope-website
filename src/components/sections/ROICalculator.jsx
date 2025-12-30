@@ -17,28 +17,28 @@ export default function ROICalculator() {
   const { potentialDeals, potentialRevenue, leadBurn } = calculateLoss();
 
   return (
-    <section className="py-20 bg-slate-900 text-white overflow-hidden relative">
+    <section className="py-14 bg-slate-950 text-white overflow-hidden relative">
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-        <div className="absolute top-10 right-10 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-10 right-10 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-96 h-96 bg-slate-600/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-4xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 text-amber-400 font-bold uppercase tracking-wider text-sm mb-3">
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center gap-2 text-emerald-300 font-bold uppercase tracking-wider text-sm mb-3">
             <Calculator size={16} />
             MCA Revenue Calculator
           </div>
           <h2 className="text-3xl md:text-5xl font-black mb-4">
-            Capture <span className="text-amber-500">Scalable Volume.</span>
+            Capture <span className="text-emerald-400">scalable volume.</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Empty desks destroy your funding volume. Calculate the revenue potential of a fully staffed MCA floor.
           </p>
         </div>
 
-        <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl">
+        <div className="bg-slate-900/40 backdrop-blur-lg border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             
             {/* Inputs */}
@@ -53,7 +53,7 @@ export default function ROICalculator() {
                     type="number" 
                     value={leadCost}
                     onChange={(e) => setLeadCost(Number(e.target.value))}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-xl py-3 pl-10 pr-4 text-white font-bold focus:ring-2 focus:ring-amber-500 focus:outline-none transition"
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 pl-10 pr-4 text-white font-bold focus:ring-2 focus:ring-emerald-400 focus:outline-none transition"
                   />
                 </div>
               </div>
@@ -68,9 +68,9 @@ export default function ROICalculator() {
                   max="300" 
                   value={leadsPerMonth}
                   onChange={(e) => setLeadsPerMonth(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                  className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-emerald-400"
                 />
-                <div className="text-right text-amber-400 font-bold mt-1">{leadsPerMonth} Leads</div>
+                <div className="text-right text-emerald-300 font-bold mt-1">{leadsPerMonth} Leads</div>
               </div>
 
               <div>
@@ -83,9 +83,9 @@ export default function ROICalculator() {
                   max="40" 
                   value={closeRate}
                   onChange={(e) => setCloseRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-green-500"
+                  className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-emerald-400"
                 />
-                <div className="text-right text-green-400 font-bold mt-1">{closeRate}%</div>
+                <div className="text-right text-emerald-300 font-bold mt-1">{closeRate}%</div>
               </div>
 
               <div>
@@ -98,7 +98,7 @@ export default function ROICalculator() {
                     type="number" 
                     value={dealValue}
                     onChange={(e) => setDealValue(Number(e.target.value))}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-xl py-3 pl-10 pr-4 text-white font-bold focus:ring-2 focus:ring-amber-500 focus:outline-none transition"
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 pl-10 pr-4 text-white font-bold focus:ring-2 focus:ring-emerald-400 focus:outline-none transition"
                   />
                 </div>
               </div>
@@ -106,9 +106,9 @@ export default function ROICalculator() {
 
             {/* Results */}
             <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 border border-slate-700 text-center relative overflow-hidden group">
-              <div className="absolute inset-0 bg-amber-500/5 group-hover:bg-amber-500/10 transition duration-500"></div>
+              <div className="absolute inset-0 bg-emerald-500/5 group-hover:bg-emerald-500/10 transition duration-500"></div>
               
-              <p className="text-amber-400 font-bold mb-2 relative z-10 flex items-center justify-center gap-2">
+              <p className="text-emerald-300 font-bold mb-2 relative z-10 flex items-center justify-center gap-2">
                 <TrendingUp size={16} />
                 Monthly Revenue Potential
               </p>
@@ -125,17 +125,17 @@ export default function ROICalculator() {
                   <span className="text-slate-300 font-bold">${leadBurn.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between text-sm border-b border-slate-700 pb-2">
-                  <span className="text-slate-400">Talent Scope Subscription</span>
-                  <span className="text-green-400 font-bold">From $1,000/mo</span>
+                  <span className="text-slate-400">ISO Bench Subscription</span>
+                  <span className="text-emerald-300 font-bold">From $1,000/mo</span>
                 </div>
                 <div className="flex justify-between text-lg font-bold">
                   <span className="text-white">Potential Net Profit</span>
-                  <span className="text-amber-400">+${(potentialRevenue - 1000).toLocaleString()}</span>
+                  <span className="text-emerald-300">+${(potentialRevenue - 1000).toLocaleString()}</span>
                 </div>
               </div>
 
               <div className="mt-8 relative z-10">
-                <a href="/schedule" className="inline-flex items-center justify-center gap-2 w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 rounded-xl transition shadow-lg shadow-amber-500/20">
+                <a href="/schedule" className="inline-flex items-center justify-center gap-2 w-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold py-3 rounded-xl transition shadow-lg shadow-emerald-500/10">
                   Start Your Stack <TrendingUp size={18} />
                 </a>
               </div>
