@@ -2,58 +2,85 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 const faqs = [
   {
+    id: 'faq-agency-difference',
+    question: "What exactly is a 'Talent Logistics' platform?",
+    answer: (
+      <>
+        <p className="mb-3">Traditional recruiting is a <strong>search</strong>. ISO Bench is a <strong>supply chain</strong>.</p>
+        <p className="mb-3">Instead of paying <strong>$5K–$20K</strong> every time you hire (variable cost that spikes your <strong>CAC</strong>), you pay a <strong>fixed monthly subscription</strong> for continuous access to video-vetted outbound talent.</p>
+        <p>We treat sales talent as <strong>inventory</strong>—ready to be drafted the moment a seat opens on your floor.</p>
+      </>
+    )
+  },
+  {
     id: 'faq-subscription',
     question: "What does the subscription deliver?",
     answer: (
       <>
-        <p className="mb-4">Your subscription provides continuous, unlimited access to your Outbound Inventory. It's a fixed-cost logistics utility designed to protect your <strong>LTV/CAC ratio</strong>.</p>
+        <p className="mb-4">A fixed-cost subscription that gives you continuous access to weekly inventory drops and a private bench you build via stacking.</p>
         <ul className="list-disc pl-6 space-y-2">
-          <li><strong>The Drop (Weekly Inventory Drops):</strong> Weekly delivery of <strong>2–4</strong> (Growth Core, dropped Monday @ <strong>2 PM EST</strong>) or <strong>5–8</strong> (Enterprise Scale, dropped Monday @ <strong>9 AM EST</strong>) Outbound Funding Specialists.</li>
-          <li><strong>The Tape:</strong> Mandatory <strong>90–120s</strong> video auditions ("The Tape Don't Lie") assessed against our Core 5: Revenue Resilience (30%), Communication Fluency & Pacing (20%), Executive Presence & Authority (20%), Incentive Alignment (20%), Operational Readiness (10%).</li>
-          <li><strong>Unlimited Hires:</strong> Hire as many reps as you need with <strong>$0 placement fees</strong>.</li>
+          <li><strong>Weekly Drops:</strong> Fresh candidates released each week (typically Monday @ <strong>2 PM EST</strong> for Growth Core and Monday @ <strong>9 AM EST</strong> for Enterprise Scale).</li>
+          <li><strong>Stacking Capacity:</strong> Growth Core can stack up to <strong>20</strong> candidates; Enterprise Scale can stack up to <strong>50</strong> candidates.</li>
+          <li><strong>The Tape:</strong> Mandatory <strong>90–120s</strong> video auditions ("The Tape Don't Lie") assessed against our Core 5 scorecard.</li>
+          <li><strong>Unlimited Hires:</strong> Hire as many reps as you want with <strong>$0 placement fees</strong>.</li>
           <li><strong>Billing:</strong> Month-to-month. Cancel anytime.</li>
         </ul>
       </>
     )
   },
   {
-    id: 'faq-agency-difference',
-    question: "Are you a recruiting agency? What is the core financial difference?",
+    id: 'faq-drop',
+    question: "What is 'The Drop' and when does it happen?",
     answer: (
       <>
-        <p className="mb-3">No. We are a <strong>Logistics Utility for the Virtual MCA Floor</strong>. Recruiters charge <strong>$5K–$20K per hire</strong>—a variable cost that spikes your <strong>CAC</strong> and destroys unit economics on turnover.</p>
-        <p>Our model delivers an <strong>unlimited, continuous supply</strong> of pre-vetted remote inventory starting at <strong>$1,000/mo</strong>. Your talent supply cost becomes <strong>predictable and marginal</strong>, safeguarding your <strong>LTV/CAC ratio</strong>.</p>
+        <p className="mb-3"><strong>The Drop</strong> is our weekly release of fresh, video-vetted candidates into the ISO Bench portal.</p>
+        <ul className="list-disc pl-6 space-y-2">
+          <li><strong>Enterprise Scale:</strong> Monday @ <strong>9:00 AM EST</strong> (priority access)</li>
+          <li><strong>Growth Core:</strong> Monday @ <strong>2:00 PM EST</strong></li>
+        </ul>
+        <p className="mt-3">Enterprise Scale also includes access to <strong>Elite</strong> candidates (Score <strong>≥ 8.5</strong>), which are not available on Growth Core.</p>
       </>
     )
   },
   {
     id: 'faq-stacking',
-    question: "What is 'Stacking' and why is it crucial for my virtual MCA floor?",
+    question: "How does 'Stacking' work? What does it unlock?",
     answer: (
       <>
-        <p className="mb-3"><strong>Stacking</strong> builds operational insurance. Your industry loses 50% of reps every quarter. Candidates remain on your bench for up to <strong>30 days</strong>. After four weekly drops, your bench typically grows to <strong>8–16</strong> (Growth Core) or <strong>20–32</strong> (Enterprise Scale) Outbound Funding Specialists.</p>
-        <p>When turnover hits (it will), you draft a replacement <strong>instantly</strong>. Result: <strong>your dials never stop</strong> and your <strong>CAC stays fixed</strong>—replacement costs are marginal instead of a <strong>$5K–$20K</strong> spike.</p>
+        <p className="mb-3"><strong>Stacking</strong> is how you claim a candidate into your bench. When you click “Stack to My Bench,” the candidate moves into your private portal and their contact details are revealed.</p>
+        <p className="mb-3"><strong>What it unlocks:</strong> Email/phone plus any optional supplemental info the candidate provided (resume and/or LinkedIn profile).</p>
+        <p className="mb-3"><strong>Plan limits:</strong> Growth Core can have up to <strong>20</strong> active stacks; Enterprise Scale can have up to <strong>50</strong> active stacks.</p>
+        <p>Stacking is the operational insurance: when turnover hits, you draft a replacement fast—no new recruiter fee cycle, no downtime.</p>
       </>
     )
   },
   {
-    id: 'faq-unlimited-bench',
-    question: "What does Unlimited Bench Access mean?",
+    id: 'faq-unstack',
+    question: "Can I unstack a candidate if they aren't a fit?",
     answer: (
       <>
-        <p className="mb-3"><strong>Unlimited Bench Access:</strong> Stack as many Outbound Funding Specialists on your bench as you need. Every week, we drop fresh inventory—<strong>2–4 candidates (Growth Core)</strong> or <strong>5–8 candidates (Enterprise Scale)</strong>—directly into your portal.</p>
-        <p className="mb-3">Your bench capacity grows consistently. <strong>8–16 candidates on your bench after 4 weeks</strong> (Growth Core) gives you operational insurance: when a rep quits, you draft a replacement instantly. No placement fees. No per-head costs. No downtime.</p>
-        <p>The subscription provides continuous access to inventory; you control hiring decisions and deployment.</p>
+        <p className="mb-3">No. To prevent data scraping and protect the integrity of the marketplace, stacks are treated as <strong>locked for up to 30 days</strong>.</p>
+        <p>The absence of optional supplemental info (resume/LinkedIn) does not entitle a client to unstack—choose your drafts based on <strong>The Tape</strong>.</p>
+      </>
+    )
+  },
+  {
+    id: 'faq-rule-of-5',
+    question: "What is the 'Rule of 5'?",
+    answer: (
+      <>
+        <p className="mb-3">To protect candidates from being overwhelmed and to keep a premium experience for clients, each candidate can be stacked by a maximum of <strong>5</strong> companies.</p>
+        <p>Once the 5th company stacks a candidate, they may be removed from new stacking availability in the marketplace.</p>
       </>
     )
   },
   {
     id: 'faq-vetting-standard',
-    question: "What is the vetting standard? (The 'Tape Don't Lie' promise)",
+    question: "What is 'The Tape'? (The 'Tape Don't Lie' promise)",
     answer: (
       <>
-        <p className="mb-3">We vet for <strong>sustained dial capacity</strong> and <strong>real-time objection handling under rejection pressure</strong>, not resume fluff. In high-velocity MCA outbound, <strong>dial-pressure resilience</strong> and <strong>objection-handling speed</strong> are the primary assets—industry knowledge is secondary.</p>
-        <p className="mb-3">Each candidate records a <strong>90–120s</strong> audition and is scored on our <strong>5-Point Scorecard</strong>:</p>
+        <p className="mb-3">Resumes don’t predict phone performance in high-velocity MCA outbound. <strong>The Tape</strong> does.</p>
+        <p className="mb-3">Every candidate records a <strong>90–120s</strong> video audition and is scored on our <strong>5-Point Scorecard</strong>:</p>
         <ul className="list-disc pl-6 space-y-2">
           <li><strong>Revenue Resilience</strong> (30%) — Objection handling and pipeline protection under rejection pressure.</li>
           <li><strong>Communication Fluency & Pacing</strong> (20%) — Clear, authoritative communication on outbound calls.</li>
@@ -66,12 +93,72 @@ const faqs = [
     )
   },
   {
+    id: 'faq-resume-linkedin',
+    question: "Do I get a resume or LinkedIn profile?",
+    answer: (
+      <>
+        <p className="mb-3"><strong>The Tape</strong> is the primary signal we optimize for because it shows live phone presence under pressure.</p>
+        <p>Most candidates also provide an optional resume and/or LinkedIn profile. If provided, they appear in your portal <strong>as soon as you stack</strong> the candidate.</p>
+      </>
+    )
+  },
+  {
+    id: 'faq-placement-fees',
+    question: "Are there any placement fees?",
+    answer: (
+      <>
+        <p className="mb-3">None. Hire one rep or build a full floor—your cost remains a <strong>flat monthly subscription</strong>.</p>
+        <p>We exist to keep your talent cost <strong>fixed</strong> and your <strong>CAC predictable</strong>, even through turnover.</p>
+      </>
+    )
+  },
+  {
+    id: 'faq-us-based',
+    question: "Are these candidates remote-ready? Are they US-based?",
+    answer: (
+      <>
+        <p className="mb-3">Yes—remote-first. Every candidate is vetted for <strong>Remote Readiness</strong>: a quiet workspace, reliable high-speed internet, and the discipline to operate inside a CRM workflow.</p>
+        <p>We source global talent with near-native English who work <strong>US hours</strong>. Some candidates are US-based, others are international—what matters is dial performance and operational reliability.</p>
+      </>
+    )
+  },
+  {
+    id: 'faq-candidate-location-preferences',
+    question: "Do you provide where candidates live and whether they prefer remote / hybrid / office (or relocation)?",
+    answer: (
+      <>
+        <p className="mb-3">Yes. Candidate profiles include practical operating details like <strong>location/time zone</strong>, stated <strong>work-style preference</strong> (remote / hybrid / in-office), and whether they are <strong>willing to relocate</strong> (if applicable).</p>
+        <p>That said, ISO Bench is built <strong>remote-first</strong>. Our vetting and the core economics of the model are designed around remote outbound operators who can perform from anywhere on US hours.</p>
+      </>
+    )
+  },
+  {
+    id: 'faq-1099-commission',
+    question: "Do you favor candidates who want to work 1099 (contractor) and commission-only?",
+    answer: (
+      <>
+        <p className="mb-3">Yes. In this industry, incentive alignment matters. We tend to favor candidates who explicitly prefer <strong>1099 contractor</strong> arrangements and <strong>commission-only</strong> compensation because it matches the realities of high-velocity outbound.</p>
+        <p>If a candidate selects different preferences (W2, base-heavy, etc.), they can still appear in the portal—but it may <strong>reduce their score</strong> because it signals lower incentive alignment for commission-first outbound environments.</p>
+      </>
+    )
+  },
+  {
+    id: 'faq-deploy-speed',
+    question: "How fast can I deploy a rep?",
+    answer: (
+      <>
+        <p className="mb-3"><strong>Fast.</strong> Once you stack a candidate, contact details are unlocked and you can move directly to interview and onboarding.</p>
+        <p>The industry churns too fast to wait for the "perfect" resume. <strong>Hire for energy and grit, then point them at the dialer.</strong></p>
+      </>
+    )
+  },
+  {
     id: 'faq-performance-guarantee',
     question: "Do you guarantee a hire's performance or cover them if they quit?",
     answer: (
       <>
-        <p className="mb-3">We guarantee the <strong>pipeline</strong>, not individual performance. Our value makes turnover an <strong>irrelevant financial cost</strong>.</p>
-        <p>If a rep quits, you <strong>draft the next</strong> pre-vetted top performer from your bench—<strong>no fees, no downtime</strong>. That’s the <strong>operational insurance</strong> we provide.</p>
+        <p className="mb-3">We guarantee the <strong>pipeline</strong>, not individual performance. You control hiring, coaching, and management.</p>
+        <p>If a rep quits, the point of the bench is you can <strong>draft the next</strong>—without starting a new recruiter fee cycle.</p>
       </>
     )
   },
@@ -81,17 +168,7 @@ const faqs = [
     answer: (
       <>
         <p className="mb-3">ISO Bench is your <strong>Fixed-Cost MCA Talent Logistics Utility</strong>, focused on delivering Remote-Ready Outbound Funding Specialists.</p>
-        <p><strong>Final compliance</strong> remains the client's responsibility: background checks, required disclosures, and employment verification. This division of labor keeps talent costs <strong>fixed & low</strong> while preserving <strong>operational control</strong>.</p>
-      </>
-    )
-  },
-  {
-    id: 'faq-deploy-speed',
-    question: "How fast can I deploy a rep?",
-    answer: (
-      <>
-        <p className="mb-3"><strong>Outbound Funding Specialists:</strong> Remote-ready. Vetted for tech-readiness, unshakeable phone presence, sustained dial capacity, and the discipline to hit 300+ dials a day from any location.</p>
-        <p>The industry churns too fast to wait for the "perfect" candidate who knows your specific underwriting box. <strong>Hire for energy and grit, then point them at the dialer.</strong></p>
+        <p><strong>Final compliance</strong> remains the client's responsibility: background checks, required disclosures, and employment verification.</p>
       </>
     )
   },
@@ -107,16 +184,9 @@ const faqs = [
     question: "Do candidates need MCA experience?",
     answer: (
       <>
-        <p className="mb-3"><strong>Outbound Funding Specialists:</strong> Minimal industry knowledge needed (10%). They slay gatekeepers, handle objections under rejection pressure, and scrub leads—they don't need to explain factor rates. We can teach them what MCA is in 20 minutes.</p>
-        <p>We source commission-hungry outbound specialists from high-stress, short-cycle sales environments (Debt Settlement, Solar, Insurance) who thrive under dial pressure.</p>
+        <p className="mb-3"><strong>Not necessarily.</strong> Outbound Funding Specialists can ramp into your box quickly. What you can’t teach is dial-pressure resilience and objection handling under rejection.</p>
+        <p>We source commission-hungry outbound specialists from adjacent short-cycle industries (Debt Settlement, Solar, Insurance) who thrive under pressure.</p>
       </>
-    )
-  },
-  {
-    id: 'faq-us-based',
-    question: "Are they remote? Are they US-based?",
-    answer: (
-      <p>Yes. We specialize in <strong>remote-first reps</strong>. Every candidate is vetted for tech-readiness, unshakeable phone presence, and the discipline to hit 300+ dials a day. We source global talent with near-native English who work <strong>US hours</strong> and understand MCA products, business owner psychology, and funding urgency.</p>
     )
   }
 ];

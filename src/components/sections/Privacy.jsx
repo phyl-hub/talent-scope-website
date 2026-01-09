@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-bold text-slate-100 mb-4">1. Introduction & Scope</h2>
             <p className="mb-4">
-              ISO Bench is a brand name operated by Talent Scope Group LLC ("ISO Bench," "we," "us," "our"). We are a **Fixed-Cost Talent Supply Partner**—a subscription-based fixed-cost talent supply service operating under Wyoming law. This Privacy Policy governs how we collect, use, disclose, and protect personal data and biometric information from:
+              ISO Bench is a brand name operated by Talent Scope Group LLC ("ISO Bench," "we," "us," "our"). We are a <strong>Fixed-Cost Talent Supply Partner</strong>—a subscription-based fixed-cost talent supply service operating under Wyoming law. This Privacy Policy governs how we collect, use, disclose, and protect personal data and biometric information from:
             </p>
             <ul className="list-disc pl-6 space-y-2 mb-4">
               <li>Candidates who submit video applications and resumes</li>

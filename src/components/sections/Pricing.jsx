@@ -43,11 +43,7 @@ export default function Pricing() {
                 </li>
                 <li className="flex items-start gap-4">
                   <Zap className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
-                    <span className="font-semibold text-slate-100"><strong>2–4 Standard Batch candidates</strong> delivered weekly.</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold text-slate-100">Standard midday drop at 2 PM EST every Monday.</span>
+                    <span className="font-semibold text-slate-100">Weekly inventory drops (every Monday at <strong>2 PM EST</strong>).</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <RefreshCw className="w-6 h-6 text-slate-400 flex-shrink-0 mt-0.5" />
@@ -108,11 +104,7 @@ export default function Pricing() {
                 </li>
                 <li className="flex items-start gap-4">
                   <Zap className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold"><strong>5–8 Elite Batch candidates</strong> delivered weekly.</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <Flame className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span className="font-semibold">Priority access to the top 10% Elite Batch.</span>
+                  <span className="font-semibold"><strong>Enterprise-only Elite access:</strong> Score <strong>≥ 8.5</strong>.</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <CheckCircle2 className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-0.5" />

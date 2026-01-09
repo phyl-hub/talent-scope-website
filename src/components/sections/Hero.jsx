@@ -118,13 +118,13 @@ export default function Hero() {
                   
                   {/* Active Candidate with Popover */}
                   <div className="relative">
-                    <CandidateRow name="Enterprise Only:" role="Top 10% Asset. Upgrade to Unlock." score={9.5} />
+                    <CandidateRow name="Enterprise Only:" role="Elite access (Score ≥ 8.5). Upgrade to unlock." score={9.5} />
                     <div className="absolute -right-2 -top-2 bg-emerald-400 text-slate-950 text-[10px] font-black px-2 py-1 rounded-full shadow-lg">
                       TOP
                     </div>
                   </div>
 
-                  <CandidateRow name="Enterprise Only:" role="Top 10% Asset. Upgrade to Unlock." score={8.6} />
+                  <CandidateRow name="Enterprise Only:" role="Elite access (Score ≥ 8.5). Upgrade to unlock." score={8.6} />
                 </div>
               </div>
             </div>
@@ -139,8 +139,8 @@ export default function Hero() {
               </div>
             </div>
             <div className="bg-slate-900/60 rounded-xl shadow-xl border border-slate-800 p-5">
-              <CandidateRow name="Enterprise Only:" role="Top 10% Asset. Upgrade to Unlock." score={9.8} />
-              <CandidateRow name="Enterprise Only:" role="Top 10% Asset. Upgrade to Unlock." score={9.4} />
+              <CandidateRow name="Enterprise Only:" role="Elite access (Score ≥ 8.5). Upgrade to unlock." score={9.8} />
+              <CandidateRow name="Enterprise Only:" role="Elite access (Score ≥ 8.5). Upgrade to unlock." score={9.4} />
             </div>
           </div>
 

@@ -21,7 +21,7 @@ export default function CandidateRow({ name, role, score, media }) {
           <p className={`font-bold text-slate-100 ${shouldBlur ? 'filter blur-sm' : ''}`}>{name}</p>
           <p className="text-xs text-slate-400">{role}</p>
           {shouldBlur && (
-            <p className="text-xs text-amber-400 font-semibold mt-1">Enterprise Only: Top 10% Asset. Upgrade to Unlock.</p>
+            <p className="text-xs text-amber-400 font-semibold mt-1">Enterprise Only: Elite access (Score ≥ 8.5). Upgrade to unlock.</p>
           )}
         </div>
       </div>
